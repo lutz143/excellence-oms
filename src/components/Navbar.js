@@ -17,9 +17,9 @@ function Navbar() {
             <nav id="nav-container">
                 <div className="topnavbar-container">
                     <div className="topnavbar">
-                        <div style={{ color: 'white' }}>News</div>
-                        <div style={{ color: 'white' }}>Events</div>
-                        <div style={{ color: 'white' }}>Contact</div>
+                        <NavLink to="/news">News</NavLink>
+                        <NavLink to="/events">Events</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </div>
                 </div>
             </nav>

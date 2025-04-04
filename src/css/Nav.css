@@ -7,19 +7,24 @@
 }
 
 .topnavbar-container {
-    display: block;
-    position: relative;
-    z-index: 100;
-    width: 100%;
+    display: flex;
     height: 24px;
+    padding-right: 10px;
     background-color: var(--light-blue);
 }
 
 .topnavbar {
     display: flex;
     justify-content: end;
+    align-items: center;
+    margin-right: 8px;
     width: 100%;
+}
+
+.topnavbar a {
     margin-right: 20px;
+    color: var(--excellence-white);
+    text-decoration: none;
 }
 
 #nav-container {
@@ -50,7 +55,7 @@
   height: auto;
 }
 
-.nav-title {
+/* .nav-title {
   font-family: "Gloria Hallelujah", cursive;
   padding-bottom: 18px;
   font-weight: 400;
@@ -58,7 +63,7 @@
   color: var(--white);
   text-decoration: none !important;
   border: none;
-}
+} */
 
 /* Style for the main navbar */
 .navbar {
@@ -80,7 +85,7 @@
 
 .navbar li a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: 600;
   color: var(--white);
   transition: 0.3s ease-in-out;
@@ -146,12 +151,14 @@
 }
   
 .dropdown-menu li a {
+    font-size: 1.3rem;
     text-decoration: none;
     color: black;
     display: block;
 }
   
-.dropdown-menu li a:hover {
+.dropdown-menu li a:hover,
+.dropdown-menu li a.active {
     background: #f0f0f0;
     color: var(--excellence-blue);
 }
