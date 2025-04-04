@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 
 import "../css/Nav.css";
+import logo from "../assets/ExcellenceOMS_1.png";
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -12,13 +13,12 @@ function Navbar() {
 
     return (
         <nav id="nav-container">
+            {/* display hamburger menu when media query triggered */}
             <div className="navbar">
                 <NavLink to="#" className="menu-bars">
                     <FaIcons.FaBars onClick={showSidebar} />
                 </NavLink>
-                <NavLink to="/" className="nav-title">nomin<span style={{ fontSize: "3.5rem" }}>al</span>.com</NavLink>
             </div>
-
             <div className={sidebar ? "mobile active" : "navbar"}>
                 <ul className="navbar" onClick={showSidebar}>
                     <li><NavLink to="/">Home</NavLink></li>
@@ -40,6 +40,8 @@ function Navbar() {
                             <li><NavLink to="/about/involvement">Involvement</NavLink></li>
                         </ul>
                     </li>
+
+                    <img src={logo} alt="Logo" className="nav-logo" />
 
                     <li><NavLink to="/grants">Grants</NavLink></li>
                     <li><NavLink to="/login">Profile</NavLink></li>
