@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import {
 //     ApolloClient,
 //     InMemoryCache,
@@ -11,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import classes from "./App.css";
 
 import Navbar from "./components/Navbar";
+import Board from "./components/Board";
 // import Footer from "./containers/Footer";
 
 // import Home from "./pages/Home";
@@ -31,6 +33,10 @@ function App() {
         // <ApolloProvider client={client}>
         <Router>
             <Navbar />
+            <Routes>
+                <Route path="/about/board" element={<Board />} />
+            </Routes>
+
         </Router>
         // </ApolloProvider>
     );
