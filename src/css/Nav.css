@@ -2,6 +2,7 @@
 
 /* ================= TEST CODE =================  */
 
+
 .text-left {
     text-align: left;
 }
@@ -21,10 +22,16 @@
     width: 100%;
 }
 
-.topnavbar a {
+.topnavbar a{
     margin-right: 20px;
+    font-size: 1.1rem;
     color: var(--excellence-white);
     text-decoration: none;
+}
+
+/* text-shadow : horizontal-shadow vertical-shadow blur color; */
+.topnavbar a:hover{
+    text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
 }
 
 #nav-container {
