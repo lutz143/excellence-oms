@@ -23,38 +23,44 @@ function Navbar() {
             </div>
             <Container id="card-container">
                 <Row>
-                    <Col className="col-4" id="card-col">
-                        <Card id="board-card">
-                            <div className="board-img-container">
-                                <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                            </div>
-                            <div>
-                                <h3>David E. Urbanek, DMD, MS</h3>
-                                <h4>Text text text text text. Text Text text.</h4>
-                            </div>
-                        </Card>
+                    <Col className="col-md-4 col-sm-6" id="card-col">
+                        <NavLink to="/about/board-member">
+                            <Card id="board-card">
+                                <div className="board-img-container">
+                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
+                                </div>
+                                <div>
+                                    <h3>David E. Urbanek, DMD, MS</h3>
+                                    <h4>Text text text text text. Text Text text.</h4>
+                                </div>
+                            </Card>
+                        </NavLink>
                     </Col>
-                    <Col className="col-4" id="card-col">
-                        <Card id="board-card">
-                            <div className="board-img-container">
-                                <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                            </div>
-                            <div>
-                                <h3>David E. Urbanek, DMD, MS</h3>
-                                <h4>Text text text text text. Text Text text.</h4>
-                            </div>
-                        </Card>
+                    <Col className="col-md-4 col-sm-6" id="card-col">
+                        <NavLink to="/about/board-member">
+                            <Card id="board-card">
+                                <div className="board-img-container">
+                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
+                                </div>
+                                <div>
+                                    <h3>David E. Urbanek, DMD, MS</h3>
+                                    <h4>Text text text text text. Text Text text.</h4>
+                                </div>
+                            </Card>
+                        </NavLink>
                     </Col>
-                    <Col className="col-4" id="card-col">
-                        <Card id="board-card">
-                            <div className="board-img-container">
-                                <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                            </div>
-                            <div>
-                                <h3>David E. Urbanek, DMD, MS</h3>
-                                <h4>Text text text text text. Text Text text.</h4>
-                            </div>
-                        </Card>
+                    <Col className="col-md-4 col-sm-6" id="card-col">
+                        <NavLink to="/about/board-member">
+                            <Card id="board-card">
+                                <div className="board-img-container">
+                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
+                                </div>
+                                <div>
+                                    <h3>David E. Urbanek, DMD, MS</h3>
+                                    <h4>Text text text text text. Text Text text.</h4>
+                                </div>
+                            </Card>
+                        </NavLink>
                     </Col>
                 </Row>
             </Container>
