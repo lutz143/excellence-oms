@@ -21,9 +21,9 @@ function Navbar() {
                     Our forward-looking leadership team is made up of dedicated, focused and experienced executives.  Working with each other and with our employees worldwide, their knowledge and experience come together to make a difference for all our stakeholders – patients, healthcare providers, employees, investors and communities around the globe.
                 </p>
             </div>
-            <Container>
+            <Container id="card-container">
                 <Row>
-                    <Col className="col-4">
+                    <Col className="col-4" id="card-col">
                         <Card id="board-card">
                             <div className="board-img-container">
                                 <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
@@ -34,11 +34,27 @@ function Navbar() {
                             </div>
                         </Card>
                     </Col>
-                    <Col className="col-4">
-                        test
+                    <Col className="col-4" id="card-col">
+                        <Card id="board-card">
+                            <div className="board-img-container">
+                                <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
+                            </div>
+                            <div>
+                                <h3>David E. Urbanek, DMD, MS</h3>
+                                <h4>Text text text text text. Text Text text.</h4>
+                            </div>
+                        </Card>
                     </Col>
-                    <Col className="col-4">
-                        test
+                    <Col className="col-4" id="card-col">
+                        <Card id="board-card">
+                            <div className="board-img-container">
+                                <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
+                            </div>
+                            <div>
+                                <h3>David E. Urbanek, DMD, MS</h3>
+                                <h4>Text text text text text. Text Text text.</h4>
+                            </div>
+                        </Card>
                     </Col>
                 </Row>
             </Container>
