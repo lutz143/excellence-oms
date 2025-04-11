@@ -22,6 +22,10 @@ body{
 }
 /* ================= TEST CODE =================  */
 
+.board {
+    background-color: var(--light-gray);
+}
+
 .board-leadership {
     background-color: var(--excellence-white);
     border-radius: 3px;

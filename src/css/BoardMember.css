@@ -1,16 +1,21 @@
+.board-member {
+    background-color: var(--excellence-white);
+}
+
 .row {
     height: 350px;
 }
 
-  .board-img-container {
+
+.board-member-img-container {
     width: 200px;
     height: 200px;
-  }
+}
 
-  img {
+img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
 
   

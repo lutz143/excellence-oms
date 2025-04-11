@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { members } from '../data/membersList';
 
 import "../css/Board.css";
 
-function Navbar() {
+function Board() {
     const [sidebar, setSidebar] = useState(false);
-    const [aboutDropdown, setAboutDropdown] = useState(false);
-
-    const showSidebar = () => setSidebar(!sidebar);
 
     return (
         <section className="board">
@@ -23,49 +21,25 @@ function Navbar() {
             </div>
             <Container id="card-container">
                 <Row>
-                    <Col className="col-md-4 col-sm-6" id="card-col">
-                        <NavLink to="/about/board-member">
-                            <Card id="board-card">
-                                <div className="board-img-container">
-                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                                </div>
-                                <div>
-                                    <h3>David E. Urbanek, DMD, MS</h3>
-                                    <h4>Text text text text text. Text Text text.</h4>
-                                </div>
-                            </Card>
-                        </NavLink>
-                    </Col>
-                    <Col className="col-md-4 col-sm-6" id="card-col">
-                        <NavLink to="/about/board-member">
-                            <Card id="board-card">
-                                <div className="board-img-container">
-                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                                </div>
-                                <div>
-                                    <h3>David E. Urbanek, DMD, MS</h3>
-                                    <h4>Text text text text text. Text Text text.</h4>
-                                </div>
-                            </Card>
-                        </NavLink>
-                    </Col>
-                    <Col className="col-md-4 col-sm-6" id="card-col">
-                        <NavLink to="/about/board-member">
-                            <Card id="board-card">
-                                <div className="board-img-container">
-                                    <img src="https://midwestomfs.com/wp-content/uploads/UrbanekStand.png" alt="Board Member Picture"></img>
-                                </div>
-                                <div>
-                                    <h3>David E. Urbanek, DMD, MS</h3>
-                                    <h4>Text text text text text. Text Text text.</h4>
-                                </div>
-                            </Card>
-                        </NavLink>
-                    </Col>
+                    {members.map((member) => (
+                        <Col className="col-md-4 col-sm-6" id="card-col">
+                            <NavLink to={`/about/board-member/${member.id}`}>
+                                <Card id="board-card">
+                                    <div className="board-img-container">
+                                        <img src={`${member.image}`} alt="Board Member"></img>
+                                    </div>
+                                    <div>
+                                        <h3>{member.name}</h3>
+                                        <h4>{member.title}</h4>
+                                    </div>
+                                </Card>
+                            </NavLink>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
         </section>
     );
 }
 
-export default Navbar;
+export default Board;

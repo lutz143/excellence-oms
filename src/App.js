@@ -36,7 +36,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/about/board" element={<Board />} />
-                <Route path="/about/board-member" element={<BoardMember />} />
+                <Route path="/about/board-member/:id" element={<BoardMember />} />
             </Routes>
 
         </Router>
