@@ -1,0 +1,47 @@
+.boardMember {
+    background-color: var(--excellence-white);
+}
+
+.boardMemberHeader {
+    background-color: var(--excellence-white);
+    border-radius: 3px;
+    margin-bottom: 12px;
+    padding: 12px 20px 12px 20px;
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+    font-family: 'Source Code Pro`', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    background-color: green;
+}
+
+.boardBio p {
+    height: fit-content;
+    display: flex;
+    height: fit-content;
+    font-family: "Numans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    align-content: center;
+    align-items: center;
+}
+
+.row {
+    height: 350px;
+}
+
+
+.boardMemberImgContainer {
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+  

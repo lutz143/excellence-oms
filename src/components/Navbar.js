@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import "../css/Nav.css";
 import logo from "../assets/ExcellenceOMS_1.png";
+
+import classes from "../css/Nav.module.css";
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -13,8 +14,8 @@ function Navbar() {
 
     return (
         <header>
-            <nav id="nav-container">
-                <div className="topnavbar-container">
+            <nav id={classes.navContainer}>
+                <div className={classes.topnavbarContainer}>
                     <div className="topnavbar">
                         <NavLink to="/news">News</NavLink>
                         <NavLink to="/events">Events</NavLink>
@@ -23,29 +24,29 @@ function Navbar() {
                 </div>
             </nav>
 
-            <nav className="menu-bars">
+            <nav className={classes.menuBars}>
                 {/* display hamburger menu when media query triggered */}
-                <div className="navbar">
-                    <NavLink to="#" className="menu-bars">
+                <div className={classes.navbar}>
+                    <NavLink to="#" className={classes.menuBars}>
                         <FaIcons.FaBars onClick={showSidebar} />
                     </NavLink>
                 </div>
             </nav>
-            <nav id="nav-container">
-                <div className="nav-background">
+            <nav id={classes.navContainer}>
+                <div className={classes.navBackground}>
                     <div className={sidebar ? "mobile active" : "navbar"}>
-                        <ul className="navbar" onClick={showSidebar}>
+                        <ul className={classes.navbar} onClick={showSidebar}>
                             <li><NavLink to="/">Home</NavLink></li>
 
                             {/* About Dropdown (Hover-Based) */}
                             <li
-                                className="dropdown"
+                                className={classes.dropdown}
                                 onMouseEnter={() => setAboutDropdown(true)}
                                 onMouseLeave={() => setTimeout(() => setAboutDropdown(false), 300)}
                             >
                                 <NavLink to="/about">About</NavLink>
                                 <ul
-                                    className={`dropdown-menu ${aboutDropdown ? "show" : ""}`}
+                                    className={`${classes.dropdownMenu} ${aboutDropdown ? classes.show : ""}`}
                                     onMouseEnter={() => setAboutDropdown(true)}
                                     onMouseLeave={() => setAboutDropdown(false)}
                                 >
@@ -54,8 +55,10 @@ function Navbar() {
                                     <li><NavLink to="/about/involvement">Involvement</NavLink></li>
                                 </ul>
                             </li>
-                            <div className="img-container">
-                                <img src={logo} alt="Logo" className="nav-logo" />
+                            <div className={classes.imgContainer}>
+                                <NavLink to="/">
+                                    <img src={logo} alt="Logo" />
+                                </NavLink>
                             </div>
 
 

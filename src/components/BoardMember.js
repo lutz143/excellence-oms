@@ -4,7 +4,7 @@ import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { members } from '../data/membersList';
 
-import "../css/BoardMember.css";
+import classes from "../css/BoardMember.module.css";
 
 function BoardMember() {
     const { id } = useParams();
@@ -19,25 +19,25 @@ function BoardMember() {
     }
 
     return (
-        <section className="board-member">
-            <div className="board-leadership">
+        <section className={classes.boardMember}>
+            <div className={classes.boardMemberHeader}>
                 <h2>{member.name}</h2>
             </div>
             <Container>
                 <Row>
                     <Col className="col-3">
-                        <div className="board-member-img-container">
+                        <div className={classes.boardMemberImgContainer}>
                             <img src={`${member.image}`} alt="Board Member"></img>
                         </div>
                     </Col>
                     <Col className="col-9">
-                        <div>
+                        <div className={classes.boardBio}>
                             <p>{member.bio}</p>
                         </div>
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     );
 }
 
