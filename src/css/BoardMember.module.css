@@ -19,7 +19,7 @@
 
 .boardMemberRow {
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .boardBio {
@@ -31,12 +31,14 @@
 .boardMemberImgContainer {
     min-width: 250px;
     min-height: 250px;
+    margin-right: 30px;
 }
 
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 8px;
 }
 
   

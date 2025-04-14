@@ -10,14 +10,14 @@ export const members = [
     {
         id: 'josh-lutz',
         name: 'Josh Lutz',
-        title: 'Hero',
+        title: 'Dictator & Micro-Manager',
         bio: 'Josh is amazing and he is the best...',
         image: '/images/JoshLutz.jpg'
     },
     {
         id: 'andrea-lutz',
         name: 'Andrea Lutz',
-        title: 'Birthday Girl',
+        title: 'Janitor',
         bio: 'Andrea is ok...',
         image: '/images/Andrea.jpg'
     }
