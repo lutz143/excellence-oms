@@ -13,29 +13,24 @@
     font-weight: 600;
 }
 
-.container {
-    background-color: green;
+.boardMemberConatiner {
+    height: fit-content;
 }
 
-.boardBio p {
-    height: fit-content;
-    display: flex;
-    height: fit-content;
+.boardMemberRow {
+    align-items: center;
+    justify-content: center;
+}
+
+.boardBio {
     font-family: "Numans", sans-serif;
     font-size: 1.2rem;
     line-height: 2.2rem;
-    align-content: center;
-    align-items: center;
 }
-
-.row {
-    height: 350px;
-}
-
 
 .boardMemberImgContainer {
-    width: 200px;
-    height: 200px;
+    min-width: 250px;
+    min-height: 250px;
 }
 
 img {

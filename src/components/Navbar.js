@@ -16,7 +16,7 @@ function Navbar() {
         <header>
             <nav id={classes.navContainer}>
                 <div className={classes.topnavbarContainer}>
-                    <div className="topnavbar">
+                    <div className={classes.topnavbar}>
                         <NavLink to="/news">News</NavLink>
                         <NavLink to="/events">Events</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
@@ -34,7 +34,12 @@ function Navbar() {
             </nav>
             <nav id={classes.navContainer}>
                 <div className={classes.navBackground}>
-                    <div className={sidebar ? "mobile active" : "navbar"}>
+                    <div
+                        className={
+                            sidebar
+                                ? `${classes.mobile} ${classes.active}`
+                                : classes.navbar
+                        }>
                         <ul className={classes.navbar} onClick={showSidebar}>
                             <li><NavLink to="/">Home</NavLink></li>
 
@@ -68,7 +73,7 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-        </header>
+        </header >
     );
 }
 

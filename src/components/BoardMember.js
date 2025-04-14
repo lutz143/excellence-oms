@@ -23,8 +23,8 @@ function BoardMember() {
             <div className={classes.boardMemberHeader}>
                 <h2>{member.name}</h2>
             </div>
-            <Container>
-                <Row>
+            <Container className={classes.boardMemberConatiner}>
+                <Row className={classes.boardMemberRow}>
                     <Col className="col-3">
                         <div className={classes.boardMemberImgContainer}>
                             <img src={`${member.image}`} alt="Board Member"></img>
