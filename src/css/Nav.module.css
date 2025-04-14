@@ -7,7 +7,7 @@
     text-align: left;
 }
 
-.topnavbar-container {
+.topnavbarContainer {
     display: flex;
     height: 24px;
     padding-right: 10px;
@@ -34,18 +34,18 @@
     text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
 }
 
-#nav-container {
+#navContainer {
     display: block;
     z-index: 100;
     padding: 0;
 }
 
-.img-container {
+.imgContainer {
     width: 155px;
     height: 90px;
 }
 
-.img-container img {
+.imgContainer img {
     width: 100%;
     height: auto;
 }
@@ -54,23 +54,13 @@
 /* ================= TEST CODE =================  */
 
 
-.nav-background {
+.navBackground {
   display: block;
   background: linear-gradient(103deg, var(--excellence-black1) 0%, rgb(12, 15, 19) 52%, var(--excellence-black5) 35%);
   border-bottom: solid 3px var(--excellence-blue);
   width: 100%;
   height: auto;
 }
-
-/* .nav-title {
-  font-family: "Gloria Hallelujah", cursive;
-  padding-bottom: 18px;
-  font-weight: 400;
-  font-size: 2.8rem;
-  color: var(--white);
-  text-decoration: none !important;
-  border: none;
-} */
 
 /* Style for the main navbar */
 .navbar {
@@ -120,7 +110,7 @@
   left: 20px;
 }
 
-.menu-bars {
+.menuBars {
   display: none;
 }
   
@@ -131,7 +121,7 @@
 }
   
 /* Initially hide the dropdown menu */
-.dropdown-menu {
+.dropdownMenu {
     display: none;
     position: absolute;
     left: 20%;
@@ -147,25 +137,25 @@
 }
   
 /* Show the dropdown menu when hovering over "About" */
-.dropdown:hover .dropdown-menu,
-.dropdown-menu.show {
+.dropdown:hover .dropdownMenu,
+.dropdownMenu.show {
   display: block;
 }
   
 /* Style for submenu items */
-.dropdown-menu li {
+.dropdownMenu li {
     padding: 8px 12px;
 }
   
-.dropdown-menu li a {
+.dropdownMenu li a {
     font-size: 1.3rem;
     text-decoration: none;
     color: black;
     display: block;
 }
   
-.dropdown-menu li a:hover,
-.dropdown-menu li a.active {
+.dropdownMenu li a:hover,
+.dropdownMenu li a.active {
     background: #f0f0f0;
     color: var(--excellence-blue);
 }
@@ -174,7 +164,7 @@
 
 @media screen and (max-width: 872px) {
 
-  #nav-container {
+  #navContainer {
     position: fixed;
     z-index: 100;
     padding: 0;
@@ -184,7 +174,7 @@
     display: none;
   }
 
-  .menu-bars {
+  .menuBars {
     display: block;
     margin: 12px 12px 12px;
     font-size: 2rem;
@@ -192,7 +182,7 @@
     color: var(--excellence-blue);
   }
 
-  .menu-bars {
+  .menuBars {
     margin: 0 12px 12px 12px;
     font-size: 2rem;
     background: none;
