@@ -49,6 +49,13 @@ function Footer(props) {
                         </div>
                     </Col>
                 </Row>
+                <Row>
+                    <div className={classes.copyrightWrapper}>
+                        <p className={classes.copyrightFooter}>
+                            ©2025 Excellence in OMS. All rights reserved.
+                        </p>
+                    </div>
+                </Row>
             </Container>
         </footer>
     );
