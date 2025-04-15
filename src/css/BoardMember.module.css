@@ -1,4 +1,9 @@
+body {
+    min-height: 100%;
+}
+
 .boardMember {
+    margin-bottom: 5%;
     background-color: var(--excellence-white);
 }
 

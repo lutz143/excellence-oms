@@ -1,7 +1,12 @@
 /* ================= TEST CODE =================  */
+
 body{
-    height: 1500px;
+    min-height: 100%;
+}
+
+.board {
     background-color: var(--light-gray);
+    padding-bottom: 5%;    
 }
 
 #cardCol {
@@ -22,9 +27,6 @@ body{
 }
 /* ================= TEST CODE =================  */
 
-.board {
-    background-color: var(--light-gray);
-}
 
 .boardLeadership {
     background-color: var(--excellence-white);

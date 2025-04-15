@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import Board from "./components/Board";
 import BoardMember from "./components/BoardMember";
-// import Footer from "./containers/Footer";
+import Footer from "./components/Footer";
 
 // import Home from "./pages/Home";
 // import Stock from "./pages/Stock";
@@ -38,7 +38,7 @@ function App() {
                 <Route path="/about/board" element={<Board />} />
                 <Route path="/about/board-member/:id" element={<BoardMember />} />
             </Routes>
-
+            <Footer />
         </Router>
         // </ApolloProvider>
     );
