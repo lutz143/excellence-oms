@@ -1,9 +1,4 @@
 /* ================= TEST CODE =================  */
-
-body{
-    min-height: 100%;
-}
-
 .board {
     background-color: var(--light-gray);
     padding-bottom: 5%;    
