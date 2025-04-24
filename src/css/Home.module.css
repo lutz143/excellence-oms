@@ -30,12 +30,32 @@
 
 .textContent {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    bottom: 0px;
+    z-index: 100;
+    padding-left: 10%;
+    padding-right: 10%;
     color: white;
-    text-align: center;
-    z-index: 2;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    text-align: left;
+    border-top: solid 3px var(--excellence-blue);
+}
+
+.counterWrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.counterWrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.counterWrapper p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--excellence-blue);
 }
 
 .textContent p {
@@ -44,6 +64,7 @@
 }
 
 .section {
+    background-image: url("/public/images/dots.png");
     padding: 60px 20px;
     background-color: #f8f9fa;
 }
