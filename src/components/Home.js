@@ -43,12 +43,29 @@ function Home() {
                 </Container>
             </section>
 
-            <section className={classes.sectionAlt}>
+            <section className={classes.homeMission}>
                 <div className={classes.textBanner}>
                     <h2>Our Mission</h2>
                     <p>Our mission is to support aspiring oral and maxillofacial surgeons during residency through financial grants, fostering excellence, equity, and innovation in the field.</p>
                     <p>You're a rabid anti-dentite! Oh, it starts with a few jokes and some slurs: "Hey, denty!" Next thing you know you'll be saying, "They should have their own schools"!</p>
                 </div>
+            </section>
+
+            <section className={classes.aboutUsSection}>
+                <Container className={classes.aboutUsWrapper}>
+                    <Col>
+                        <div className={classes.aboutUsImageWrapper}>
+                            <img src="/images/DoctorsConsulting.jpg" alt="Doctors Consulting" className={classes.aboutUsImage} />
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className={classes.aboutUsTextBanner}>
+                            <h2>About Us</h2>
+                            <p>Our mission is to support aspiring oral and maxillofacial surgeons during residency through financial grants, fostering excellence, equity, and innovation in the field.</p>
+                            <p>You're a rabid anti-dentite! Oh, it starts with a few jokes and some slurs: "Hey, denty!" Next thing you know you'll be saying, "They should have their own schools"!</p>
+                        </div>
+                    </Col>
+                </Container>
             </section>
         </>
     );

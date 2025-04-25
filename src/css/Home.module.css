@@ -5,17 +5,17 @@
     overflow: hidden;
 }
 
+.bannerImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .bannerImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.bannerImageWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .overlay {
@@ -35,6 +35,7 @@
     z-index: 100;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 10px;
     color: white;
     width: 100%;
     background: rgba(0, 0, 0, 0.55);
@@ -69,7 +70,7 @@
     background-color: #f8f9fa;
 }
 
-.sectionAlt {
+.homeMission {
     display: flex;
     flex-direction: column;
     padding: 60px 20px;
@@ -78,7 +79,7 @@
 }
 
 .textBanner {
-    max-width: 50%;
+    max-width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +94,63 @@
 
 .textBanner p {
     text-align: center;
+    color: var(--blue-gray);
+    font-family: 'Source Code Pro`', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.homePlaceholder {
+    background-color: var(--excellence-light-blue);
+}
+
+
+.aboutUsSection {
+    padding: 60px 20px;
+    background-color: var(--excellence-light-blue);
+}
+
+
+.aboutUsWrapper {
+    display: flex;
+    max-width: 90rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.aboutUsImageWrapper {
+    width: 450px;
+    height: auto;
+    margin-right: 25px;
+}
+
+.aboutUsImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2%;
+}
+
+.aboutUsTextBanner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.aboutUsTextBanner h2 {
+    font-size: 3.2rem;
+    color: var(--excellence-blue);
+    font-family: "Numans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.aboutUsTextBanner p {
     color: var(--blue-gray);
     font-family: 'Source Code Pro`', sans-serif;
     font-size: 1.2rem;
