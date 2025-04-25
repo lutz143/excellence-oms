@@ -54,6 +54,41 @@ function About() {
                                 <h2>Strategic Partners</h2>
                             </div>
                         </Row>
+                        <Row>
+                            <Col className="col-md-4 col-sm-6">
+                                <div className={classes.cardImgContainer}>
+                                    <Card.Img className={classes.cardImg} src="/images/midwest-oms.png" />
+                                </div>
+                                <Card id={classes.boardCard}>
+                                    <Card.Header id={classes.cardHeader}>Midwest OMS</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col className="col-md-4 col-sm-6">
+                                <div className={classes.cardImgContainer}>
+                                    <Card.Img className={classes.cardImg} id={classes.dentalLifeImg} src="/images/dental-life-network.png" />
+                                </div>
+                                <Card id={classes.boardCard}>
+                                    <Card.Header id={classes.cardHeader}>Dental Lifeline Network</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col className="col-md-4 col-sm-6">
+                                <div className={classes.cardImgContainer}>
+                                    <Card.Img className={classes.cardImg} id={classes.osteoImg} src="/images/osteo-science-foundation-logo.jpg" />
+                                </div>
+                                <Card id={classes.boardCard}>
+                                    <Card.Header id={classes.cardHeader}>Osteo Science Foundation</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
                     </div>
                 </Container>
             </section>

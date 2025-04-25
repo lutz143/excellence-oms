@@ -68,6 +68,7 @@
     color: var(--blue-gray);
 }
   
+/* =================== BEGINNING STYLE OF ORIGINS =================== */
 
 .originsWrapper {
     position: relative;
@@ -80,6 +81,8 @@
     text-align: center;
     font-size: 1.8em;
     border-top: solid 2px var(--excellence-blue);
+    margin-bottom: 34px;
+    /* border-bottom: solid 2px var(--excellence-blue); */
 }
 
 .originsWrapper h2 {
@@ -88,10 +91,104 @@
     color: var(--excellence-white);
     padding: 0.5em 1em;
     border-bottom: solid 4px var(--excellence-blue);
-    /* padding: 1em 1em 0.3em; */
     border-radius: 20% 0;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.9rem;
     margin-bottom: 16px;
+}
+
+
+/* =================== BEGINNING STYLE OF STRATEGIC PARTNERS =================== */
+
+.partnershipWrapper h2 {
+    font-family: "Oxygen", "Numans", sans-serif;   
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    color: var(--blue-gray);
+    margin-bottom: 4%;
+}
+
+.cardImgContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardImg {
+    width: 20%;
+}
+
+#dentalLifeImg {
+    width: 28%;
+}
+
+#osteoImg {
+    width: 11.5%;
+}
+
+#cardContainer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardHeader {
+    font-family: "Oxygen", "Numans", sans-serif; ;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: solid 2px var(--excellence-white);
+    background: none;
+    letter-spacing: 0.1rem;
+}
+
+
+#boardCard {
+    padding: 1.2rem 2.5rem;
+    align-items: center;
+    /* border-radius: 0px; */
+    margin: 12px;
+    border: none;
+    background-color: var(--seafoam);
+    color: var(--excellence-white);
+}
+
+#boardCard:hover {
+    background-color: var(--excellence-white);
+    color: var(--blue-gray);
+    box-shadow: 2px 1px 18px 1px  gray;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+#boardCard h3, #boardCard h4 {
+    text-align: center;
+    color: var(--dark-gray);
+    margin-top: 12px;
+}
+
+#boardCard h3 {
+    font-size: 1.3rem;
+}
+
+#boardCard h4 {
+    margin-bottom: 24px;
+    font-size: 1.0rem;
+}
+
+.boardImgContainer {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 80%;
+    margin: 14px 20px;
+}
+
+.boardImgContainer img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    transform: translate(-58px, -40px); /* move image around to crop */
 }
