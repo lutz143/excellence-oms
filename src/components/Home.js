@@ -18,7 +18,7 @@ function Home() {
                     <img src="/images/AdobeStock_73382244.jpeg" alt="Banner" className={classes.bannerImage} />
                     <div className={classes.overlay}></div>
                     <div className={classes.textContent}>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Building Excellence in Oral Surgery — One Grant at a Time</p>
                         <p>Consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -44,10 +44,11 @@ function Home() {
             </section>
 
             <section className={classes.sectionAlt}>
-                <Container>
+                <div className={classes.textBanner}>
                     <h2>Our Mission</h2>
-                    <p>There are many providers of dental insurance, all of which offer different levels of coverage. Midwest Oral Maxillofacial & Implant Surgery accepts all of the following insurance plans among many others.</p>
-                </Container>
+                    <p>Our mission is to support aspiring oral and maxillofacial surgeons during residency through financial grants, fostering excellence, equity, and innovation in the field.</p>
+                    <p>You're a rabid anti-dentite! Oh, it starts with a few jokes and some slurs: "Hey, denty!" Next thing you know you'll be saying, "They should have their own schools"!</p>
+                </div>
             </section>
         </>
     );
