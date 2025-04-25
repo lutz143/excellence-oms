@@ -1,0 +1,163 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Reduced height */
+    overflow: hidden;
+}
+
+.bannerImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.textContent {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 100;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    color: white;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    text-align: left;
+    border-top: solid 3px var(--excellence-blue);
+}
+
+.counterWrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.counterWrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.counterWrapper p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--excellence-blue);
+}
+
+.textContent p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.section {
+    background-image: url("/public/images/dots.png");
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.homeMission {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.textBanner {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textBanner h2 {
+    font-size: 3.2rem;
+    color: var(--excellence-blue);
+    font-family: "Numans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.textBanner p {
+    text-align: center;
+    color: var(--blue-gray);
+    font-family: 'Source Code Pro`', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.homePlaceholder {
+    background-color: var(--excellence-light-blue);
+}
+
+
+.aboutUsSection {
+    padding: 60px 20px;
+    background-color: var(--excellence-light-blue);
+}
+
+
+.aboutUsWrapper {
+    display: flex;
+    max-width: 90rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.aboutUsImageWrapper {
+    width: 450px;
+    height: auto;
+    margin-right: 25px;
+}
+
+.aboutUsImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2%;
+}
+
+.aboutUsTextBanner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.aboutUsTextBanner h2 {
+    font-size: 3.2rem;
+    color: var(--excellence-blue);
+    font-family: "Numans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.aboutUsTextBanner p {
+    color: var(--blue-gray);
+    font-family: 'Source Code Pro`', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    align-content: center;
+}
