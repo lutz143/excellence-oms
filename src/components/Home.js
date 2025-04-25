@@ -46,7 +46,7 @@ function Home() {
             <section className={classes.homeMission}>
                 <div className={classes.textBanner}>
                     <h2>Our Mission</h2>
-                    <p>Our mission is to support aspiring oral and maxillofacial surgeons during residency through financial grants, fostering excellence, equity, and innovation in the field.</p>
+                    <p>Our mission is to advance the field of Oral & Maxillofacial Surgery (OMS) through education and clinical training for Oral & Maxillofacial Surgeons and OMS Residents.</p>
                     <p>You're a rabid anti-dentite! Oh, it starts with a few jokes and some slurs: "Hey, denty!" Next thing you know you'll be saying, "They should have their own schools"!</p>
                 </div>
             </section>
@@ -60,9 +60,8 @@ function Home() {
                     </Col>
                     <Col>
                         <div className={classes.aboutUsTextBanner}>
-                            <h2>About Us</h2>
-                            <p>Our mission is to support aspiring oral and maxillofacial surgeons during residency through financial grants, fostering excellence, equity, and innovation in the field.</p>
-                            <p>You're a rabid anti-dentite! Oh, it starts with a few jokes and some slurs: "Hey, denty!" Next thing you know you'll be saying, "They should have their own schools"!</p>
+                            <h2>Our Story</h2>
+                            <p>Founded by a practicing oral and maxillofacial surgeon, our nonprofit organization was created to support the next generation of surgeons during one of the most demanding phases of their careers: residency. By awarding grants to those who show promise, passion, and financial need, we hope to advance excellence in the field while removing barriers to success. We believe in a future where every resident has the tools and resources to reach their full potential</p>
                         </div>
                     </Col>
                 </Container>
