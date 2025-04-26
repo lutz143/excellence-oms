@@ -20,6 +20,7 @@
     --gray:rgba(200, 200, 201, 0.518);
     --light-blue:rgba(12, 120, 194, 0.85);
     --light-gray:rgba(238, 238, 247, 0.85);
+    --dark-blue: rgba(0, 48, 108);
     --dark-blue-transparent: rgba(40, 67, 100, 1);
     --light-blue-transparent: rgba(108, 152, 181, 0.5);
     --white: rgb(255, 255, 255);
@@ -28,4 +29,4 @@
     --light-yellow: rgb(255, 239, 194);
     --hover-opacity: 0.9;
     font-size: 12px;
-  }
+}
