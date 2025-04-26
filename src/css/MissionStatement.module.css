@@ -1,0 +1,120 @@
+/* =================== BEGINNING STYLE OF MISSION STATEMENT =================== */
+
+.homeMission {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.textBanner {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.textBanner h2 {
+    font-size: 3.2rem;
+    color: var(--excellence-blue);
+    font-family: "Numans", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textBanner p {
+    text-align: center;
+    color: var(--blue-gray);
+    font-family: 'Source Code Pro`', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* =================== BEGINNING STYLE OF PRINCIPLES =================== */
+
+.principlesContainer {
+    background: linear-gradient(90deg,#218587,#084b67);
+    padding: 24px;
+}
+
+.principlesHeader {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.principlesHeader h2 {
+    font-family: "Numans", sans-serif;
+    color: white;
+    font-size: 2.4rem;
+    padding-top: 18px;
+    margin-bottom: 34px;
+}
+
+.missionCard {
+    /* min-height: 265px; */
+    border-radius: 0;
+    color: var(--excellence-white);
+    font-family: "Numans", sans-serif;
+}
+
+.cardEducation {
+    background-color: rgb(60, 92, 139);
+}
+
+.cardService {
+    background-color: rgb(43, 168, 158);
+}
+
+.cardResearch {
+    background-color: rgb(12, 120, 194);
+}
+
+#missionCardHeader {
+    text-align: center;
+    border-bottom: none;
+    background: none;
+    font-family: "Numans", sans-serif;
+    font-size: 14px;
+    padding-top: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+#missionCard p {
+    font-family: 'Source Code Pro`', sans-serif;
+}
+
+.cardText {
+    min-height: 70px;
+}
+
+
+/* =================== BEGINNING STYLE OF CARD ICONS =================== */
+
+.cardIconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 14px;
+}
+
+.materialSymbolsOutlined {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-size: 34px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    color: var(--excellence-white);
+    padding: 8px;
+    border: 1pt solid var(--excellence-white);
+    border-radius: 50%;
+  }

@@ -55,7 +55,8 @@ function Navbar() {
                                     onMouseEnter={() => setAboutDropdown(true)}
                                     onMouseLeave={() => setAboutDropdown(false)}
                                 >
-                                    <li><NavLink to="/about/mission">Mission Statement</NavLink></li>
+                                    <li><NavLink to="/about">About Us</NavLink></li>
+                                    <li><NavLink to="/about/mission-statement">Mission Statement</NavLink></li>
                                     <li><NavLink to="/about/board">Board Members</NavLink></li>
                                     <li><NavLink to="/about/involvement">Involvement</NavLink></li>
                                 </ul>

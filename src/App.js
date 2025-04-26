@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home"
 import About from "./components/About";
+import MissionStatement from "./components/MissionStatement";
 import Board from "./components/Board";
 import BoardMember from "./components/BoardMember";
 import Footer from "./components/Footer";
@@ -33,6 +34,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/about/mission-statement" element={<MissionStatement />} />
                 <Route path="/about/board" element={<Board />} />
                 <Route path="/about/board-member/:id" element={<BoardMember />} />
             </Routes>
