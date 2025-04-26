@@ -98,6 +98,18 @@
     margin-bottom: 16px;
 }
 
+.originsWrapper p {
+    padding: 0 54px;
+    color: var(--blue-gray);
+    letter-spacing: 0.09rem;
+    line-height: 1.7;
+}
+
+.originsWrapper p:nth-last-of-type(1) {
+    margin-top: 24px;
+    font-style: italic;
+}
+
 
 /* =================== BEGINNING STYLE OF STRATEGIC PARTNERS =================== */
 
@@ -153,6 +165,8 @@
     border: none;
     background-color: var(--seafoam);
     color: var(--excellence-white);
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #boardCard:hover {
@@ -163,32 +177,11 @@
     cursor: pointer;
 }
 
-#boardCard h3, #boardCard h4 {
-    text-align: center;
-    color: var(--dark-gray);
-    margin-top: 12px;
+#boardCard:hover #cardHeader {
+    border-bottom: solid 2px var(--seafoam);
 }
 
-#boardCard h3 {
-    font-size: 1.3rem;
-}
-
-#boardCard h4 {
-    margin-bottom: 24px;
-    font-size: 1.0rem;
-}
-
-.boardImgContainer {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 80%;
-    margin: 14px 20px;
-}
-
-.boardImgContainer img {
-    width: 350px;
-    height: auto;
-    object-fit: cover;
-    transform: translate(-58px, -40px); /* move image around to crop */
+#boardCard p {
+    font-size: 1.2rem;
+    font-weight: 500;
 }

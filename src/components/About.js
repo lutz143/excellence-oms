@@ -41,7 +41,8 @@ function About() {
                     </Row>
                     <Row>
                         <div>
-                            <p>Founded by a practicing oral and maxillofacial surgeon, our nonprofit organization was created to support the next generation of surgeons during one of the most demanding phases of their careers: residency. By awarding grants to those who show promise, passion, and financial need, we hope to advance excellence in the field while removing barriers to success. We believe in a future where every resident has the tools and resources to reach their full potential.</p>
+                            <p>Founded by a practicing oral and maxillofacial surgeon, our nonprofit organization was created to support the next generation of surgeons during one of the most demanding phases of their careers: residency. By awarding grants to those who show promise, passion, and financial need, we hope to advance excellence in the field while removing barriers to success.</p>
+                            <p>We believe in a future where every resident has the tools and resources to reach their full potential.</p>
                         </div>
                     </Row>
                 </div>
@@ -56,37 +57,49 @@ function About() {
                         </Row>
                         <Row>
                             <Col className="col-md-4 col-sm-6">
-                                <div className={classes.cardImgContainer}>
-                                    <Card.Img className={classes.cardImg} src="/images/midwest-oms.png" />
-                                </div>
-                                <Card id={classes.boardCard}>
-                                    <Card.Header id={classes.cardHeader}>Midwest OMS</Card.Header>
-                                    <Card.Body>
-                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <a href="https://midwestomfs.com/" target="_blank" rel="noreferrer" alt="Link to Midwest OMS">
+                                    <div className={classes.cardImgContainer}>
+                                        <Card.Img className={classes.cardImg} src="/images/midwest-oms.png" />
+                                    </div>
+                                </a>
+                                <a href="https://midwestomfs.com/" target="_blank" rel="noreferrer" alt="Link to Midwest OMS">
+                                    <Card id={classes.boardCard}>
+                                        <Card.Header id={classes.cardHeader}>Midwest OMS</Card.Header>
+                                        <Card.Body>
+                                            <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
                             </Col>
                             <Col className="col-md-4 col-sm-6">
-                                <div className={classes.cardImgContainer}>
-                                    <Card.Img className={classes.cardImg} id={classes.dentalLifeImg} src="/images/dental-life-network.png" />
-                                </div>
-                                <Card id={classes.boardCard}>
-                                    <Card.Header id={classes.cardHeader}>Dental Lifeline Network</Card.Header>
-                                    <Card.Body>
-                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <a href="https://dentallifeline.org/" target="_blank" rel="noreferrer" alt="Link to Dental Lifeline">
+                                    <div className={classes.cardImgContainer}>
+                                        <Card.Img className={classes.cardImg} id={classes.dentalLifeImg} src="/images/dental-life-network.png" />
+                                    </div>
+                                </a>
+                                <a href="https://dentallifeline.org/" target="_blank" rel="noreferrer" alt="Link to Dental Lifeline">
+                                    <Card id={classes.boardCard}>
+                                        <Card.Header id={classes.cardHeader}>Dental Lifeline Network</Card.Header>
+                                        <Card.Body>
+                                            <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
                             </Col>
                             <Col className="col-md-4 col-sm-6">
-                                <div className={classes.cardImgContainer}>
-                                    <Card.Img className={classes.cardImg} id={classes.osteoImg} src="/images/osteo-science-foundation-logo.jpg" />
-                                </div>
-                                <Card id={classes.boardCard}>
-                                    <Card.Header id={classes.cardHeader}>Osteo Science Foundation</Card.Header>
-                                    <Card.Body>
-                                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <a href="https://www.osteoscience.org/" target="_blank" rel="noreferrer" alt="Link to Osteo Science">
+                                    <div className={classes.cardImgContainer}>
+                                        <Card.Img className={classes.cardImg} id={classes.osteoImg} src="/images/osteo-science-foundation-logo.jpg" />
+                                    </div>
+                                </a>
+                                <a href="https://www.osteoscience.org/" target="_blank" rel="noreferrer" alt="Link to Osteo Science">
+                                    <Card id={classes.boardCard}>
+                                        <Card.Header id={classes.cardHeader}>Osteo Science Foundation</Card.Header>
+                                        <Card.Body>
+                                            <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </a>
                             </Col>
                         </Row>
                     </div>
