@@ -1,0 +1,207 @@
+.aboutUsSection {
+    position: relative;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+  
+.aboutUsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+  
+.aboutUsImageWrapper {
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+  
+.aboutUsImage {
+    width: 120%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    position: relative;
+    z-index: 1;
+}
+  
+.aboutUsImageWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255,255,255,0),  rgba(255,255,255,0.95));
+    z-index: 2;
+}
+
+.aboutUsTextBanner {
+    position: relative;
+    background-color: rgba(0, 150, 255, 0.12);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin-top: 30px;
+    z-index: 3;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-left: solid 2.5px var(--blue-gray);
+}
+
+.aboutUsTextBanner:nth-of-type(2) {
+    border-left: solid 2.5px var(--excellence-blue);
+    margin-top: 50px;
+}
+  
+.aboutUsTextBanner h2 {
+    font-family: "Oxygen", "Numans", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+  
+.aboutUsTextBanner p {
+    font-size: 1.5rem;
+    color: var(--blue-gray);
+}
+  
+/* =================== BEGINNING STYLE OF ORIGINS =================== */
+
+.originsWrapper {
+    position: relative;
+    width: 100%;
+    padding: 4rem 10rem;
+    background-color: rgba(0, 150, 255, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8em;
+    border-top: solid 2px var(--excellence-blue);
+    margin-bottom: 34px;
+    /* border-bottom: solid 2px var(--excellence-blue); */
+}
+
+.originsWrapper h2 {
+    font-family: "Oxygen", "Numans", sans-serif;
+    background-color: var(--blue-gray);
+    color: var(--excellence-white);
+    padding: 0.5em 1em;
+    border-bottom: solid 4px var(--excellence-blue);
+    border-radius: 20% 0;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.originsWrapper p {
+    padding: 0 54px;
+    color: var(--blue-gray);
+    letter-spacing: 0.09rem;
+    line-height: 1.7;
+}
+
+.originsWrapper p:nth-last-of-type(1) {
+    margin-top: 24px;
+    font-style: italic;
+}
+
+
+/* =================== BEGINNING STYLE OF STRATEGIC PARTNERS =================== */
+
+.partnershipWrapper h2 {
+    font-family: "Oxygen", "Numans", sans-serif;   
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    color: var(--blue-gray);
+    margin-bottom: 4%;
+}
+
+.cardImgContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardImg {
+    width: 20%;
+}
+
+#dentalLifeImg {
+    width: 28%;
+}
+
+#osteoImg {
+    width: 11.5%;
+}
+
+#cardContainer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardHeader {
+    font-family: "Oxygen", "Numans", sans-serif; ;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: solid 2px var(--excellence-white);
+    background: none;
+    letter-spacing: 0.1rem;
+}
+
+
+#boardCard {
+    padding: 1.2rem 2.5rem;
+    align-items: center;
+    /* border-radius: 0px; */
+    margin: 12px;
+    border: none;
+    background-color: var(--seafoam);
+    color: var(--excellence-white);
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+
+#boardCard:hover {
+    background-color: var(--excellence-white);
+    color: var(--blue-gray);
+    box-shadow: 2px 1px 18px 1px  gray;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+#boardCard:hover #cardHeader {
+    border-bottom: solid 2px var(--seafoam);
+}
+
+#boardCard p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+/* =================== BEGINNING STYLE OF LOCATIONS =================== */
+
+.locationSection {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.locationHeader h2 {
+    font-size: 2.9rem;
+    color: var(--dark-blue-transparent);
+}
+
+.locationHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}

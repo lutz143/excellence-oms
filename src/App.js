@@ -12,17 +12,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import classes from "./App.css";
 
 import Navbar from "./components/Navbar";
+import Home from "./components/Home"
+import About from "./components/About";
 import Board from "./components/Board";
 import BoardMember from "./components/BoardMember";
 import Footer from "./components/Footer";
-import Home from "./components/Home"
 
-// import Home from "./pages/Home";
-// import Stock from "./pages/Stock";
-// import Register from "./pages/Register";
-// import Login from "./pages/LoginForm";
-// import Profile from "./pages/Profile";
-// import About from "./pages/About";
 
 // const client = new ApolloClient({
 //     uri: '/graphql',
@@ -37,6 +32,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/about/board" element={<Board />} />
                 <Route path="/about/board-member/:id" element={<BoardMember />} />
             </Routes>
