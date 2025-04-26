@@ -166,7 +166,7 @@
     background-color: var(--seafoam);
     color: var(--excellence-white);
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 44px;
 }
 
 #boardCard:hover {
@@ -184,4 +184,24 @@
 #boardCard p {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+
+
+/* =================== BEGINNING STYLE OF LOCATIONS =================== */
+
+.locationSection {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.locationHeader h2 {
+    font-size: 2.9rem;
+    color: var(--dark-blue-transparent);
+}
+
+.locationHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
 }
