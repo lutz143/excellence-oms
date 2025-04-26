@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/excellence-oms/static/css/main.01256360.css",
+    "main.js": "/excellence-oms/static/js/main.5579e9bb.js",
+    "static/js/453.636ed89a.chunk.js": "/excellence-oms/static/js/453.636ed89a.chunk.js",
+    "static/media/ExcellenceOMS_1.png": "/excellence-oms/static/media/ExcellenceOMS_1.d91f3514e8f1054ac238.png",
+    "static/media/dots.png": "/excellence-oms/static/media/dots.c2f8c3178003b220569c.png",
+    "static/media/ExcellenceOMS_Transparent.png": "/excellence-oms/static/media/ExcellenceOMS_Transparent.e8638e49875c64519b20.png",
+    "index.html": "/excellence-oms/index.html",
+    "main.01256360.css.map": "/excellence-oms/static/css/main.01256360.css.map",
+    "main.5579e9bb.js.map": "/excellence-oms/static/js/main.5579e9bb.js.map",
+    "453.636ed89a.chunk.js.map": "/excellence-oms/static/js/453.636ed89a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01256360.css",
+    "static/js/main.5579e9bb.js"
+  ]
+}
