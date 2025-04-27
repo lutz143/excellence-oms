@@ -146,14 +146,15 @@
 
 #cardHeader {
     font-family: "Oxygen", "Numans", sans-serif; ;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 110%;
     border-bottom: solid 2px var(--excellence-white);
     background: none;
     letter-spacing: 0.1rem;
+    text-align: center;
 }
 
 
