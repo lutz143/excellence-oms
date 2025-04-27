@@ -17,6 +17,11 @@ import About from "./components/About";
 import MissionStatement from "./components/MissionStatement";
 import Board from "./components/Board";
 import BoardMember from "./components/BoardMember";
+import Involvement from "./components/Involvement";
+import Grants from "./components/Grants"
+import Apply from "./components/Apply"
+import Donors from "./components/Donors"
+import Profile from "./components/Profile"
 import Footer from "./components/Footer";
 
 
@@ -25,6 +30,7 @@ import Footer from "./components/Footer";
 //     cache: new InMemoryCache(),
 // });
 
+// `${process.env.PUBLIC_URL}/images/us.svg`
 
 function App() {
     return (
@@ -32,11 +38,16 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path={`/${process.env.PUBLIC_URL}`} element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/about/mission-statement" element={<MissionStatement />} />
                 <Route path="/about/board" element={<Board />} />
                 <Route path="/about/board-member/:id" element={<BoardMember />} />
+                <Route path="/about/involvement" element={<Involvement />} />
+                <Route path="/grants" element={<Grants />} />
+                <Route path="/grants/application-process" element={<Apply />} />
+                <Route path="/grants/donors" element={<Donors />} />
+                <Route path="/login" element={<Profile />} />
             </Routes>
             <Footer />
         </Router>
