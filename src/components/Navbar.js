@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/ExcellenceOMS_1.png";
+import logo from "../assets/ExcellenceOMS_Transparent2.png";
 
 import classes from "../css/Nav.module.css";
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
     const [aboutDropdown, setAboutDropdown] = useState(false);
+    const [grantsDropdown, setGrantsDropdown] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
 
@@ -67,8 +68,24 @@ function Navbar() {
                                 </NavLink>
                             </div>
 
+                            {/* Grants Dropdown (Hover-Based) */}
+                            <li
+                                className={classes.dropdown}
+                                onMouseEnter={() => setGrantsDropdown(true)}
+                                onMouseLeave={() => setTimeout(() => setGrantsDropdown(false), 300)}
+                            >
+                                <NavLink to="/grants">Grants</NavLink>
+                                <ul
+                                    className={`${classes.dropdownMenu} ${grantsDropdown ? classes.show : ""}`}
+                                    onMouseEnter={() => setGrantsDropdown(true)}
+                                    onMouseLeave={() => setGrantsDropdown(false)}
+                                >
+                                    <li><NavLink to="/grants">Grants</NavLink></li>
+                                    <li><NavLink to="/grants/application-process">How to Apply</NavLink></li>
+                                    <li><NavLink to="/grants/donors">Donors</NavLink></li>
+                                </ul>
+                            </li>
 
-                            <li><NavLink to="/grants">Grants</NavLink></li>
                             <li><NavLink to="/login">Profile</NavLink></li>
                         </ul>
                     </div>
