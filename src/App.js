@@ -35,10 +35,10 @@ import Footer from "./components/Footer";
 function App() {
     return (
         // <ApolloProvider client={client}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Navbar />
             <Routes>
-                <Route path={`/${process.env.PUBLIC_URL}`} element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/about/mission-statement" element={<MissionStatement />} />
                 <Route path="/about/board" element={<Board />} />
@@ -51,6 +51,7 @@ function App() {
             </Routes>
             <Footer />
         </Router>
+
         // </ApolloProvider>
     );
 }
