@@ -17,6 +17,7 @@ import About from "./components/About";
 import MissionStatement from "./components/MissionStatement";
 import Board from "./components/Board";
 import BoardMember from "./components/BoardMember";
+import Grants from "./components/Grants"
 import Footer from "./components/Footer";
 
 
@@ -25,6 +26,7 @@ import Footer from "./components/Footer";
 //     cache: new InMemoryCache(),
 // });
 
+// `${process.env.PUBLIC_URL}/images/us.svg`
 
 function App() {
     return (
@@ -32,11 +34,12 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path={`/${process.env.PUBLIC_URL}`} element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/about/mission-statement" element={<MissionStatement />} />
                 <Route path="/about/board" element={<Board />} />
                 <Route path="/about/board-member/:id" element={<BoardMember />} />
+                <Route path="/grants" element={<Grants />} />
             </Routes>
             <Footer />
         </Router>
