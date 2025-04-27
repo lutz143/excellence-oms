@@ -6,6 +6,12 @@ import { grants } from "../data/grants";
 
 import classes from "../css/About.module.css";
 
+import OralSurgeryPic from "../assets/AdobeStock_229352026.jpeg";
+import MidwestLogo from "../assets/midwest-oms.png"
+import DentalLifelineLogo from "../assets/dental-life-network.png"
+import OsteoScienceLogo from "../assets/osteo-science-foundation-logo.jpg"
+
+
 
 function About() {
 
@@ -16,7 +22,7 @@ function About() {
                     <Row>
                         <Col md={6}>
                             <div className={classes.aboutUsImageWrapper}>
-                                <img src="/images/AdobeStock_229352026.jpeg" alt="Oral Surgery" className={classes.aboutUsImage} />
+                                <img src={OralSurgeryPic} alt="Oral Surgery" className={classes.aboutUsImage} />
                             </div>
                         </Col>
                         <Col md={6}>
@@ -59,7 +65,7 @@ function About() {
                             <Col className="col-md-4 col-sm-6">
                                 <a href="https://midwestomfs.com/" target="_blank" rel="noreferrer" alt="Link to Midwest OMS">
                                     <div className={classes.cardImgContainer}>
-                                        <Card.Img className={classes.cardImg} src="/images/midwest-oms.png" />
+                                        <Card.Img className={classes.cardImg} src={MidwestLogo} />
                                     </div>
                                 </a>
                                 <a href="https://midwestomfs.com/" target="_blank" rel="noreferrer" alt="Link to Midwest OMS">
@@ -74,7 +80,7 @@ function About() {
                             <Col className="col-md-4 col-sm-6">
                                 <a href="https://dentallifeline.org/" target="_blank" rel="noreferrer" alt="Link to Dental Lifeline">
                                     <div className={classes.cardImgContainer}>
-                                        <Card.Img className={classes.cardImg} id={classes.dentalLifeImg} src="/images/dental-life-network.png" />
+                                        <Card.Img className={classes.cardImg} id={classes.dentalLifeImg} src={DentalLifelineLogo} />
                                     </div>
                                 </a>
                                 <a href="https://dentallifeline.org/" target="_blank" rel="noreferrer" alt="Link to Dental Lifeline">
@@ -89,7 +95,7 @@ function About() {
                             <Col className="col-md-4 col-sm-6">
                                 <a href="https://www.osteoscience.org/" target="_blank" rel="noreferrer" alt="Link to Osteo Science">
                                     <div className={classes.cardImgContainer}>
-                                        <Card.Img className={classes.cardImg} id={classes.osteoImg} src="/images/osteo-science-foundation-logo.jpg" />
+                                        <Card.Img className={classes.cardImg} id={classes.osteoImg} src={OsteoScienceLogo} />
                                     </div>
                                 </a>
                                 <a href="https://www.osteoscience.org/" target="_blank" rel="noreferrer" alt="Link to Osteo Science">
@@ -134,9 +140,9 @@ function About() {
                             }
                         `}
                     </style>
-                    <svg viewBox="0 0 1000 600" width="90%" style={{ maxWidth: "800px" }} xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 1000 600" width="90%" style={{ maxWidth: "800px" }}>
                         {/* Background Map Image */}
-                        <image href="/images/us.svg" x="0" y="0" width="1000" height="600" style={{ opacity: 0.15 }} />
+                        <image href={`${process.env.PUBLIC_URL}/images/us.svg`} x="0" y="0" width="1000" height="600" style={{ opacity: 0.15 }} />
 
                         {/* Chicago Marker */}
                         <g>

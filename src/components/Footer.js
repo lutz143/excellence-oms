@@ -5,6 +5,11 @@ import logo from "../assets/ExcellenceOMS_Transparent.png";
 
 import classes from "../css/Footer.module.css"
 
+import LinkedInLogo from "../assets/icon-linkedin.png"
+import YouTubeLogo from "../assets/icon-youtube.png"
+import FacebookLogo from "../assets/icon-facebook.png"
+import xLogo from "../assets/icon-x-fka-twitter.png"
+
 function Footer(props) {
     return (
         <footer>
@@ -57,7 +62,7 @@ function Footer(props) {
                                 <li>
                                     <div>
                                         <a href="https://www.linkedin.com/in/joshlutz/" target="_blank" rel="noreferrer" className={classes.socialIcon}>
-                                            <img src="/images/icon-linkedin.png" alt="LinkedIn Logo" />
+                                            <img src={LinkedInLogo} alt="LinkedIn Logo" />
                                         </a>
                                         <span className={classes.iconSpan}>
                                             <a href="https://www.linkedin.com/in/joshlutz/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -67,7 +72,7 @@ function Footer(props) {
                                 <li>
                                     <div>
                                         <a href="https://www.youtube.com" target="_blank" rel="noreferrer" className={classes.socialIcon}>
-                                            <img src="/images/icon-youtube.png" alt="YouTube Logo" />
+                                            <img src={YouTubeLogo} alt="YouTube Logo" />
                                         </a>
                                         <span className={classes.iconSpan}>
                                             <a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
@@ -77,7 +82,7 @@ function Footer(props) {
                                 <li>
                                     <div>
                                         <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className={classes.socialIcon}>
-                                            <img src="/images/icon-facebook.png" alt="Facebook Logo" />
+                                            <img src={FacebookLogo} alt="Facebook Logo" />
                                         </a>
                                         <span className={classes.iconSpan}>
                                             <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
@@ -87,7 +92,7 @@ function Footer(props) {
                                 <li>
                                     <div>
                                         <a href="https://www.x.com" target="_blank" rel="noreferrer" className={classes.socialIcon}>
-                                            <img src="/images/icon-x-fka-twitter.png" alt="X Logo" />
+                                            <img src={xLogo} alt="X Logo" />
                                         </a>
                                         <span className={classes.iconSpan}>
                                             <a href="https://www.x.com" target="_blank" rel="noreferrer">X</a>

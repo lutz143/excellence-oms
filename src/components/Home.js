@@ -7,6 +7,10 @@ import { grants } from "../data/grants";
 
 import classes from "../css/Home.module.css";
 
+import BannerPic from '../assets/AdobeStock_73382244.jpeg'
+import DoctorsConsultingPic from '../assets/DoctorsConsulting.jpg'
+
+
 function Home() {
     const totalGrants = grants.reduce((acc, grant) => acc + grant.count, 0);
     const totalAmount = grants.reduce((acc, grant) => acc + grant.amount, 0);
@@ -15,7 +19,7 @@ function Home() {
         <>
             <section className={classes.banner}>
                 <div className={classes.bannerImageWrapper}>
-                    <img src="/images/AdobeStock_73382244.jpeg" alt="Banner" className={classes.bannerImage} />
+                    <img src={BannerPic} className={classes.bannerImage} alt="Banner" />
                     <div className={classes.overlay}></div>
                     <div className={classes.textContent}>
                         <p>Building Excellence in Oral Surgery — One Grant at a Time</p>
@@ -55,7 +59,7 @@ function Home() {
                 <Container className={classes.aboutUsWrapper}>
                     <Col>
                         <div className={classes.aboutUsImageWrapper}>
-                            <img src="/images/DoctorsConsulting.jpg" alt="Doctors Consulting" className={classes.aboutUsImage} />
+                            <img src={DoctorsConsultingPic} alt="Doctors Consulting" className={classes.aboutUsImage} />
                         </div>
                     </Col>
                     <Col>

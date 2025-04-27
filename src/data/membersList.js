@@ -12,13 +12,13 @@ export const members = [
         name: 'Josh Lutz',
         title: 'Dictator & Micro-Manager',
         bio: 'Josh is amazing and he is the best...',
-        image: '/images/JoshLutz.jpg'
+        image: `${process.env.PUBLIC_URL}/images/JoshLutz.jpg`
     },
     {
         id: 'andrea-lutz',
         name: 'Andrea Lutz',
         title: 'Janitor',
         bio: 'Andrea is ok...',
-        image: '/images/Andrea.jpg'
+        image: `${process.env.PUBLIC_URL}/images/Andrea.jpg`
     }
 ];
