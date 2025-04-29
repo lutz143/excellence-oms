@@ -23,7 +23,7 @@ function Home() {
                     <div className={classes.overlay}></div>
                     <div className={classes.textContent}>
                         <p>Building Excellence in Oral Surgery — One Grant at a Time</p>
-                        <p>Consectetur adipiscing elit.</p>
+                        <p>Dentistae mundum sibi vindicant.</p>
                     </div>
                 </div>
             </section>

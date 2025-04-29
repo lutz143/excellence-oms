@@ -1,13 +1,16 @@
-import ComingSoon from './ComingSoon';
+import EventManager from '../containers/EventManager';
 
-const Grants = () => {
+const Involvement = () => {
     return (
         <>
-            <div>
-                <ComingSoon />
-            </div>
+            <section>
+
+            </section>
+            <section>
+                <EventManager />
+            </section>
         </>
     );
 };
 
-export default Grants;
+export default Involvement;
