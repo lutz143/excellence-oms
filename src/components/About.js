@@ -160,9 +160,6 @@ function About() {
                     </svg>
                 </div>
             </section>
-
-
-
         </>
     );
 }
