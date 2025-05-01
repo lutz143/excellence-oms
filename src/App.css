@@ -29,4 +29,8 @@
     --light-yellow: rgb(255, 239, 194);
     --hover-opacity: 0.9;
     font-size: 12px;
+
+    --oxygen: "Oxygen", "Numans", sans-serif;
+    --numans: "Numans", sans-serif;
+    --ptsans: "PT Sans", sans-serif;
 }

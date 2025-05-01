@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button, Form, ListGroup } from "react-bootstrap";
 
+import classes from "./EventManager.module.css";
+
 const LOCAL_STORAGE_KEY = "companyEvents";
 
 export default function EventManager() {
@@ -58,7 +60,7 @@ export default function EventManager() {
     };
 
     return (
-        <Container className="mt-5">
+        <Container className={classes.eventHeader}>
             <h2 className="mb-4">Upcoming Company Events</h2>
 
             <Card className="mb-4">
@@ -129,11 +131,13 @@ export default function EventManager() {
                                     />
                                 </Form.Group>
                             </Col>
-                            <Col xs={12}>
-                                <Button variant="primary" onClick={addEvent} className="w-100">
-                                    Add Event
-                                </Button>
-                            </Col>
+                            <Row>
+                                <div className={classes.buttonContainer}>
+                                    <Button variant="primary" onClick={addEvent}>
+                                        Add Event
+                                    </Button>
+                                </div>
+                            </Row>
                         </Row>
                     </Form>
                 </Card.Body>
@@ -142,32 +146,34 @@ export default function EventManager() {
             {events.length === 0 ? (
                 <p className="text-muted">No upcoming events.</p>
             ) : (
-                <ListGroup>
-                    {events.map((event) => (
-                        <ListGroup.Item
-                            key={event.id}
-                            className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
-                        >
-                            <div>
-                                <h5>{event.title}</h5>
-                                {event.subtitle && <p className="mb-1"><em>{event.subtitle}</em></p>}
-                                {event.speaker && <p className="mb-1">🎤 <strong>Speaker:</strong> {event.speaker}</p>}
-                                {event.location && <p className="mb-1">📍 <strong>Location:</strong> {event.location}</p>}
-                                <p className="mb-1">
-                                    📅 {new Date(event.date).toLocaleDateString()} at {event.time}
-                                </p>
-                            </div>
-                            <Button
-                                variant="outline-danger"
-                                size="sm"
-                                onClick={() => removeEvent(event.id)}
-                                className="mt-2 mt-md-0"
+                <Container className={classes.eventContainer}>
+                    <ListGroup>
+                        {events.map((event) => (
+                            <ListGroup.Item
+                                key={event.id}
+                                className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center"
                             >
-                                Remove
-                            </Button>
-                        </ListGroup.Item>
-                    ))}
-                </ListGroup>
+                                <div>
+                                    <h5>{event.title}</h5>
+                                    {event.subtitle && <p className="mb-1"><em>{event.subtitle}</em></p>}
+                                    {event.speaker && <p className="mb-1">🎤 <strong>Speaker:</strong> {event.speaker}</p>}
+                                    {event.location && <p className="mb-1">📍 <strong>Location:</strong> {event.location}</p>}
+                                    <p className="mb-1">
+                                        📅 {new Date(event.date).toLocaleDateString()} at {event.time}
+                                    </p>
+                                </div>
+                                <Button
+                                    variant="outline-danger"
+                                    size="sm"
+                                    onClick={() => removeEvent(event.id)}
+                                    className="mt-2 mt-md-0"
+                                >
+                                    Remove
+                                </Button>
+                            </ListGroup.Item>
+                        ))}
+                    </ListGroup>
+                </Container>
             )}
         </Container>
     );
