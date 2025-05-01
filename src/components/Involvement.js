@@ -5,15 +5,9 @@ import Beneficiaries from '../containers/Beneficiaries';
 const Involvement = () => {
     return (
         <>
-            <section>
-                <Beneficiaries />
-            </section>
-            <section>
-                <ActivityLocation />
-            </section>
-            <section>
-                <EventManager />
-            </section>
+            <Beneficiaries />
+            <ActivityLocation />
+            <EventManager />
         </>
     );
 };
