@@ -28,9 +28,9 @@ function Footer(props) {
                         </div>
                         <div className={classes.innerOrg}>
                             <ul className={classes.footerList}>
-                                <li>About</li>
-                                <li>Board Members</li>
-                                <li>Involvement</li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about/board">Board Members</NavLink></li>
+                                <li><NavLink to="/about/involvement">Involvement</NavLink></li>
                                 <li>Donors</li>
                             </ul>
                         </div>
