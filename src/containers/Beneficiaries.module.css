@@ -12,12 +12,15 @@
 
 .benefitCard {
     height: 100%;
+    padding: 8px;
     border: 1px solid var(--blue-gray);
+    color: var(--blue-gray);
     transition:
     background-color 0.25s ease-in-out,
     font-weight 0.1s ease,
     padding 0.2s linear;
     font-family: var(--numans);
+    margin-bottom: 8px;
 }
 
 
@@ -25,14 +28,14 @@
 :global(.row:nth-child(even) .card:hover) {
     background-color: var(--excellence-light-blue);
     font-weight: 600;
-    padding: 8px;
+    padding: 16px;
 }
 
 /* Optional: default hover for odd rows */
 :global(.row:nth-child(odd) .card:hover) {
     background-color: var(--seafoam-transparent);
     font-weight: 600;
-    padding: 8px;
+    padding: 16px;
 }
   
 
