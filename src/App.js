@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 
+import ScrollToTop from "./utils/ScrollToTop";
 // import {
 //     ApolloClient,
 //     InMemoryCache,
@@ -38,20 +39,22 @@ function App() {
     return (
         // <ApolloProvider client={client}>
         <Router basename={process.env.PUBLIC_URL}>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/about/mission-statement" element={<MissionStatement />} />
-                <Route path="/about/board" element={<Board />} />
-                <Route path="/about/board-member/:id" element={<BoardMember />} />
-                <Route path="/about/involvement" element={<Involvement />} />
-                <Route path="/grants" element={<Grants />} />
-                <Route path="/grants/application-process" element={<Apply />} />
-                <Route path="/grants/donors" element={<Donors />} />
-                <Route path="/login" element={<Profile />} />
-            </Routes>
-            <Footer />
+            <ScrollToTop>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/about/mission-statement" element={<MissionStatement />} />
+                    <Route path="/about/board" element={<Board />} />
+                    <Route path="/about/board-member/:id" element={<BoardMember />} />
+                    <Route path="/about/involvement" element={<Involvement />} />
+                    <Route path="/grants" element={<Grants />} />
+                    <Route path="/grants/application-process" element={<Apply />} />
+                    <Route path="/grants/donors" element={<Donors />} />
+                    <Route path="/login" element={<Profile />} />
+                </Routes>
+                <Footer />
+            </ScrollToTop>
         </Router>
 
         // </ApolloProvider>
