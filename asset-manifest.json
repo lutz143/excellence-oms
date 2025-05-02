@@ -1,18 +1,27 @@
 {
   "files": {
-    "main.css": "/excellence-oms/static/css/main.01256360.css",
-    "main.js": "/excellence-oms/static/js/main.5579e9bb.js",
+    "main.css": "/excellence-oms/static/css/main.8190577a.css",
+    "main.js": "/excellence-oms/static/js/main.14e95d7f.js",
     "static/js/453.636ed89a.chunk.js": "/excellence-oms/static/js/453.636ed89a.chunk.js",
-    "static/media/ExcellenceOMS_1.png": "/excellence-oms/static/media/ExcellenceOMS_1.d91f3514e8f1054ac238.png",
+    "static/media/AdobeStock_246948123.jpeg": "/excellence-oms/static/media/AdobeStock_246948123.3b3e3f3778809bb50ed4.jpeg",
+    "static/media/AdobeStock_229352026.jpeg": "/excellence-oms/static/media/AdobeStock_229352026.18922edf58084da863e9.jpeg",
+    "static/media/AdobeStock_73382244.jpeg": "/excellence-oms/static/media/AdobeStock_73382244.3906553ca7cf4c9360fa.jpeg",
+    "static/media/DoctorsConsulting.jpg": "/excellence-oms/static/media/DoctorsConsulting.bda1e3522476ded7cebf.jpg",
+    "static/media/ExcellenceOMS_Transparent2.png": "/excellence-oms/static/media/ExcellenceOMS_Transparent2.72cc1574583e9e7c86ac.png",
     "static/media/dots.png": "/excellence-oms/static/media/dots.c2f8c3178003b220569c.png",
     "static/media/ExcellenceOMS_Transparent.png": "/excellence-oms/static/media/ExcellenceOMS_Transparent.e8638e49875c64519b20.png",
+    "static/media/midwest-oms.png": "/excellence-oms/static/media/midwest-oms.c215fdd57b1449911958.png",
+    "static/media/icon-x-fka-twitter.png": "/excellence-oms/static/media/icon-x-fka-twitter.cffecf228f3fef4f22d4.png",
+    "static/media/icon-linkedin.png": "/excellence-oms/static/media/icon-linkedin.917242e942075b444ada.png",
+    "static/media/icon-youtube.png": "/excellence-oms/static/media/icon-youtube.c6f1cd65bf659919e1ff.png",
+    "static/media/icon-facebook.png": "/excellence-oms/static/media/icon-facebook.ea8c7a405a93f50c68ff.png",
     "index.html": "/excellence-oms/index.html",
-    "main.01256360.css.map": "/excellence-oms/static/css/main.01256360.css.map",
-    "main.5579e9bb.js.map": "/excellence-oms/static/js/main.5579e9bb.js.map",
+    "main.8190577a.css.map": "/excellence-oms/static/css/main.8190577a.css.map",
+    "main.14e95d7f.js.map": "/excellence-oms/static/js/main.14e95d7f.js.map",
     "453.636ed89a.chunk.js.map": "/excellence-oms/static/js/453.636ed89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01256360.css",
-    "static/js/main.5579e9bb.js"
+    "static/css/main.8190577a.css",
+    "static/js/main.14e95d7f.js"
   ]
 }
