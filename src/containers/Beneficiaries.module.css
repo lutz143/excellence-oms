@@ -7,11 +7,12 @@
     font-family: var(--numans);
     color: var(--blue-gray);
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
+    padding-top: 38px;
 }
 
 .benefitCard {
-    height: 100%;
+    height: 110%;
     padding: 8px;
     border: 1px solid var(--blue-gray);
     color: var(--blue-gray);
@@ -20,7 +21,11 @@
     font-weight 0.1s ease,
     padding 0.2s linear;
     font-family: var(--numans);
-    margin-bottom: 8px;
+}
+
+
+.cardRow {
+    margin-bottom: 34px;
 }
 
 

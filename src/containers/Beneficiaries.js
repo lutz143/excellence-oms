@@ -47,8 +47,8 @@ export default function Beneficiaries() {
             <Container>
                 <h2 className={classes.benefitHeader}>Who Benefits?</h2>
                 {beneficiaries.map((b, idx) => (
-                    <Row key={idx} className="mb-4">
-                        <AnimatedCard {...b} />
+                    <Row key={idx} className={classes.cardRow}>
+                        <AnimatedCard {...b} className="mb-8" />
                     </Row>
                 ))}
 
