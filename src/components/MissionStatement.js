@@ -36,7 +36,7 @@ function MissionStatement() {
                     </Row>
                     <Container>
                         <Row>
-                            <Col className="col-md-4 col-sm-12">
+                            <Col className={classes.customCol}>
                                 <Card className={`${classes.missionCard} ${classes.cardEducation}`}>
                                     <Card.Header id={classes.missionCardHeader}>Excellence in Education</Card.Header>
                                     <Card.Body>
@@ -49,7 +49,7 @@ function MissionStatement() {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col className="col-md-4 col-sm-12">
+                            <Col className={classes.customCol}>
                                 <Card className={`${classes.missionCard} ${classes.cardService}`}>
                                     <Card.Header id={classes.missionCardHeader}>Excellence in Service</Card.Header>
                                     <Card.Body>
@@ -62,7 +62,7 @@ function MissionStatement() {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col className="col-md-4 col-sm-12">
+                            <Col className={classes.customCol}>
                                 <Card className={`${classes.missionCard} ${classes.cardResearch}`}>
                                     <Card.Header id={classes.missionCardHeader}>Excellence in Research</Card.Header>
                                     <Card.Body>

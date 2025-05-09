@@ -5,7 +5,7 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 
 import InvolvementPic from "../assets/AdobeStock_246948123.jpeg"
 
-import classes from "../containers/Involvement.module.css"
+import classes from "../css/Involvement.module.css"
 
 const Involvement = () => {
     return (

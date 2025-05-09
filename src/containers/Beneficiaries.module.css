@@ -24,24 +24,38 @@
 }
 
 
+.benefitCard {
+    height: 110%;
+    padding: 8px;
+    border: 1px solid var(--blue-gray);
+    color: var(--blue-gray);
+    transition:
+    background-color 0.25s ease-in-out,
+    font-weight 0.1s ease,
+    padding 0.2s linear;
+    font-family: var(--numans);
+}
+
+
 .cardRow {
     margin-bottom: 34px;
 }
-
-
-/* Apply different background on hover for every other row */
-:global(.row:nth-child(even) .card:hover) {
+  
+  /* Even-numbered rows — custom hover */
+  .cardRow:nth-child(even) :local(.benefitCard):hover {
     background-color: var(--excellence-light-blue);
     font-weight: 600;
-    padding: 16px;
-}
-
-/* Optional: default hover for odd rows */
-:global(.row:nth-child(odd) .card:hover) {
+    padding: 1.5rem;
+  }
+  
+  /* Odd-numbered rows — optional different hover */
+  .cardRow:nth-child(odd) :local(.benefitCard):hover {
     background-color: var(--seafoam-transparent);
     font-weight: 600;
-    padding: 16px;
-}
+    padding: 1.5rem;
+  }
+  
+  
   
 
 /* <Card className="h-100 shadow-sm border-0"> */

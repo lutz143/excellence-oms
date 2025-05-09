@@ -118,3 +118,23 @@
     border: 1pt solid var(--excellence-white);
     border-radius: 50%;
   }
+
+  /* Default: Full width for extra-small devices (<576px) */
+.customCol {
+    width: 100%;
+  }
+  
+  /* Small devices (≥576px): Full width */
+  @media (min-width: 576px) {
+    .customCol {
+      width: 100%;
+    }
+  }
+  
+  /* Medium devices (≥768px): One-third width */
+  @media (min-width: 768px) {
+    .customCol {
+      width: 33.3333%;
+    }
+  }
+  
