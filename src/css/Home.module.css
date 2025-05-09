@@ -87,6 +87,7 @@
 
 .textBanner h2 {
     font-size: 3.2rem;
+    text-align: center;
     color: var(--excellence-blue);
     font-family: "Numans", sans-serif;
     margin-bottom: 20px;
