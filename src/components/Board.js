@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { members } from '../data/membersList';
 
 import classes from "../css/Board.module.css";
 
 function Board() {
-    const [sidebar, setSidebar] = useState(false);
-
     return (
         <section className={classes.board}>
             <div className={classes.boardLeadership}>
