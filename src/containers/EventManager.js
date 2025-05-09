@@ -41,8 +41,10 @@ export default function EventManager() {
         };
 
         const updatedEvents = [...events, newEvent].sort(
-            (a, b) => new Date(`${a.date}T${a.time}`) - new Date(`${b.date}T${b.time}`)
+            (a, b) =>
+                new Date(`${a.date}T${a.time}:00`) - new Date(`${b.date}T${b.time}:00`)
         );
+
 
         setEvents(updatedEvents);
         setFormData({
@@ -159,7 +161,7 @@ export default function EventManager() {
                                     {event.speaker && <p className="mb-1">🎤 <strong>Speaker:</strong> {event.speaker}</p>}
                                     {event.location && <p className="mb-1">📍 <strong>Location:</strong> {event.location}</p>}
                                     <p className="mb-1">
-                                        📅 {new Date(event.date).toLocaleDateString()} at {event.time}
+                                        📅 {new Date(`${event.date}T${event.time}:00`).toLocaleDateString()} at {event.time}
                                     </p>
                                 </div>
                                 <Button
