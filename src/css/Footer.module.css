@@ -68,6 +68,7 @@
 
 footer {
   margin-top: auto;
+  padding-top: 24px;
   width: 100%;
   min-height: 19.5em;
   background-color: var(--excellence-black5);

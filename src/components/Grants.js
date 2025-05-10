@@ -9,7 +9,7 @@ import grantImg from "../assets/AdobeStock_313812944.jpeg"
 function Grants() {
     return (
         <>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             <section className={classes.banner}>
                 <div className={classes.bannerImageWrapper}>
                     <img src={grantImg} alt='Doctor Shaking Hands' className={classes.bannerImage} />
@@ -28,8 +28,8 @@ function Grants() {
             </section>
             <section className={classes.iconBanner}>
                 <Container className={classes.iconWrapper}>
-                    <Row>
-                        <Col className={classes.iconCol}>
+                    <Row className={classes.iconRow}>
+                        <Col xs={12} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -43,9 +43,8 @@ function Grants() {
                                 </div>
                             </Row>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col className={classes.iconCol}>
+
+                        <Col xs={12} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -59,9 +58,8 @@ function Grants() {
                                 </div>
                             </Row>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col className={classes.iconCol}>
+
+                        <Col xs={12} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -75,9 +73,8 @@ function Grants() {
                                 </div>
                             </Row>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col className={classes.iconCol}>
+
+                        <Col xs={12} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -94,6 +91,7 @@ function Grants() {
                     </Row>
                 </Container>
             </section>
+
 
         </>
     );

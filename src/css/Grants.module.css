@@ -109,6 +109,14 @@
     cursor: pointer;
 }
 
+.iconRow {
+    width: 100%;
+}
+
+/* .iconCol {
+    padding: 0 2rem 0 2rem;
+} */
+
 
 
 .iconContainer {
