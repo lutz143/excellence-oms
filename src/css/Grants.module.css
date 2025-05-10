@@ -16,8 +16,9 @@
 
 .bannerImage {
     width: 100%;
-    height: 120%;
+    height: 150%;
     object-fit: cover;
+    /* transform: translate(0, 40px); */
 }
 
 .bannerImageWrapper::before {
@@ -33,7 +34,6 @@
 
 .rownContainer {
     padding: 20px;
-    border-radius: 8px;
 }
 
 .textBannerContainer {
@@ -46,11 +46,20 @@
     background-color: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     max-width: 400px;
-    margin-top: 30px;
+    margin-top: 90px;
+    margin-left: 90px;
     z-index: 3;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    border: solid 2.5px var(--blue-gray);
+    border: solid 2.5px var(--gray);
     border-radius: 1rem;
+
+    /* Start hidden and below */
+    opacity: 0;
+    transform: translateY(30px);
+
+    /* Animation */
+    animation: slideInFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
   
@@ -65,16 +74,88 @@
   
 .textBanner p {
     font-size: 1.5rem;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 400;
     color: var(--blue-gray);
 }
 
+#applyButton {
+    background-color: var(--blue-gray);
+    border: none;
+}
+
+#applyButton:hover {
+    background-color: var(--seafoam);
+}
+
+
+/* =================== BEGINNING STYLE OF ICON BANNER =================== */
+
+.iconBanner {
+    background-color: rgb(214, 241, 232);
+}
+
+.iconWrapper {
+    display: flex;
+    height: 250%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.iconCol:hover .materialSymbolsOutlined,
+.iconCol:hover .iconText {
+    color: var(--excellence-blue);
+    cursor: pointer;
+}
+
+
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.iconText {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "Oxygen", "Numans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--blue-gray);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.materialSymbolsOutlined {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-size: 64px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Customer styling */
+    color: var(--blue-gray);
+    padding: 8px;
+    margin-top: 24px;
+}
+
+/* .materialSymbolsOutlined:hover {
+    color: var(--excellence-blue);
+    cursor: pointer;
+} */
+
+/* =================== BELOW CAN BE DELETED OR MOVED =================== */
+
 .textOffer {
-    padding-top: 1rem;
-    padding-left: 3rem;
-    margin-left: 150px;
-    max-width: 450px;
+    padding: 1rem;
+    max-width: 400px;
     margin-top: 30px;
     z-index: 3;
 
@@ -84,7 +165,7 @@
 
     /* Animation */
     animation: slideInFromBottom 0.8s ease-out forwards;
-    animation-delay: 0.2s; /* optional delay */
+    animation-delay: 0.2s;
 }
 
 @keyframes slideInFromBottom {
@@ -105,5 +186,7 @@
     font-size: 1.5rem;
     font-family: "Oxygen", "Numans", sans-serif;
     color: var(--blue-gray);
+    /* color: var(--excellence-white); */
+    /* background: linear-gradient(to top, var(--blue-gray),  var(--seafoam)); */
     font-weight: 600;
 }

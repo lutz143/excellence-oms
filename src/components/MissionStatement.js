@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
+import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import { grants } from "../data/grants";
 
 import classes from "../css/MissionStatement.module.css";
 
@@ -12,8 +9,6 @@ function MissionStatement() {
     return (
         <>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
-            {/* 
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=school" /> */}
 
             <section>
                 <Container>
