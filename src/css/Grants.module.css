@@ -113,12 +113,6 @@
     width: 100%;
 }
 
-/* .iconCol {
-    padding: 0 2rem 0 2rem;
-} */
-
-
-
 .iconContainer {
     display: flex;
     justify-content: center;
@@ -154,10 +148,44 @@
     margin-top: 24px;
 }
 
-/* .materialSymbolsOutlined:hover {
-    color: var(--excellence-blue);
-    cursor: pointer;
-} */
+/* =================== GRANT TYPE BANNER =================== */
+.grantTypeBanner {
+    background-color: var(--light-blue-transparent);
+}
+
+.grantTypeBanner h2 {
+    padding: 36px 0 24px 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Oxygen", "Numans", sans-serif;
+    color: var(--blue-gray);
+}
+
+.grantTypeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 14px;
+}
+
+.grantGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 1rem;
+}
+
+.iconCol h4 {
+    font-family: "Oxygen", "Numans", sans-serif;
+    color: var(--blue-gray);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.iconCol h4:hover {
+    font-weight: 600;
+    color: var(--excellence-white);
+}
 
 /* =================== BELOW CAN BE DELETED OR MOVED =================== */
 
@@ -197,4 +225,13 @@
     /* color: var(--excellence-white); */
     /* background: linear-gradient(to top, var(--blue-gray),  var(--seafoam)); */
     font-weight: 600;
+}
+
+
+/* =================== MEDIA STYLING =================== */
+
+@media (min-width: 768px) {
+  .grantGrid {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns on md+ */
+  }
 }

@@ -91,6 +91,48 @@ function Grants() {
                     </Row>
                 </Container>
             </section>
+            <section className={classes.grantTypeBanner}>
+                <Container className={classes.grantTypeWrapper}>
+                    <h2>Grant Types</h2>
+                    <Row className={classes.grantGrid}>
+                        <Col className={classes.iconCol}>
+                            <Row>
+                                <div className={classes.iconText}>
+                                    <h4>Resident Education</h4>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col className={classes.iconCol}>
+                            <Row>
+                                <div className={classes.iconText}>
+                                    <h4>Travel Scholarship</h4>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col className={classes.iconCol}>
+                            <Row>
+                                <div className={classes.iconText}>
+                                    <h4>Mentorship & Leadership</h4>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col className={classes.iconCol}>
+                            <Row>
+                                <div className={classes.iconText}>
+                                    <h4>Community Care</h4>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col className={classes.iconCol}>
+                            <Row>
+                                <div className={classes.iconText}>
+                                    <h4>Research & Publication</h4>
+                                </div>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
 
 
         </>
