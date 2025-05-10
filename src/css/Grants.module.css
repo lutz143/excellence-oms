@@ -187,6 +187,32 @@
     color: var(--excellence-white);
 }
 
+
+
+
+/* =================== GRANT CARDS =================== */
+
+.cardSection {
+  background-color: #f9fafb; /* subtle background */
+  padding: 2rem 0;
+}
+
+.cardSection .card {
+  border-radius: 1rem;
+}
+
+.grantCard {
+    padding: 12px;
+    border: solid 1px var(--seafoam-transparent);
+    font-family: "Oxygen", "Numans", sans-serif;
+    font-size: 1.2rem;
+}
+
+.grantCard:hover {
+    box-shadow: 2px 2px 18px 1px rgb(202, 234, 223);
+}
+
+
 /* =================== BELOW CAN BE DELETED OR MOVED =================== */
 
 .textOffer {

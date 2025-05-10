@@ -133,6 +133,34 @@ function Grants() {
                     </Row>
                 </Container>
             </section>
+            <section className={classes.cardSection}>
+                <Container>
+                    <Row className="mb-4">
+                        <Col>
+                            {/* <Card className="shadow-sm border-0 p-3"> */}
+                            <Card className={classes.grantCard}>
+                                <Card.Body>
+                                    <Card.Title className="mb-3 fs-4">Resident Education</Card.Title>
+
+                                    <Card.Text className="mb-3 text-muted">
+                                        Supports oral and maxillofacial surgery residents seeking to attend national or regional educational events, hands-on workshops, or specialized training courses.
+                                    </Card.Text>
+
+                                    <Card.Header className="bg-transparent px-0 fw-bold">Ideal Candidate</Card.Header>
+                                    <Card.Text className="mb-3 text-muted">
+                                        Current OMS residents in good standing with a demonstrated interest in continuing education and limited access to institutional funding.
+                                    </Card.Text>
+
+                                    <Card.Header className="bg-transparent px-0 fw-bold">How to Apply</Card.Header>
+                                    <Card.Text className="text-muted">
+                                        Submit an online application with a personal statement, event details, and a letter of support from your program director.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
 
 
         </>
