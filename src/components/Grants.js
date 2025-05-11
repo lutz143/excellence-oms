@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
-import { members } from '../data/membersList';
+import { grantTypes } from '../data/grantTypes';
 
 import classes from "../css/Grants.module.css";
 import grantImg from "../assets/AdobeStock_313812944.jpeg"
@@ -135,30 +135,35 @@ function Grants() {
             </section>
             <section className={classes.cardSection}>
                 <Container>
-                    <Row className="mb-4">
-                        <Col>
-                            {/* <Card className="shadow-sm border-0 p-3"> */}
+                    {grantTypes.map((item, idx) => (
+                        <Row className="mb-4" key={idx}>
                             <Card className={classes.grantCard}>
-                                <Card.Body>
-                                    <Card.Title className="mb-3 fs-4">Resident Education</Card.Title>
+                                <Card.Body className="d-flex p-0">
+                                    <div className={classes.grantCardLeft}>
+                                        <span className={classes.materialSymbolsOutlined}>{item.icon}</span>
+                                    </div>
+                                    <div className="p-4 flex-grow-1">
+                                        <Card.Title className="mb-3 fs-4">{item.title}</Card.Title>
 
-                                    <Card.Text className="mb-3 text-muted">
-                                        Supports oral and maxillofacial surgery residents seeking to attend national or regional educational events, hands-on workshops, or specialized training courses.
-                                    </Card.Text>
+                                        <Card.Text className="mb-3 text-muted">
+                                            {item.description}
+                                        </Card.Text>
+                                        <Card.Header className="bg-transparent px-0 fw-bold">Ideal Candidate</Card.Header>
+                                        <Card.Text className="mb-3 text-muted">
+                                            {item.idealCandidate}
+                                        </Card.Text>
 
-                                    <Card.Header className="bg-transparent px-0 fw-bold">Ideal Candidate</Card.Header>
-                                    <Card.Text className="mb-3 text-muted">
-                                        Current OMS residents in good standing with a demonstrated interest in continuing education and limited access to institutional funding.
-                                    </Card.Text>
-
-                                    <Card.Header className="bg-transparent px-0 fw-bold">How to Apply</Card.Header>
-                                    <Card.Text className="text-muted">
-                                        Submit an online application with a personal statement, event details, and a letter of support from your program director.
-                                    </Card.Text>
+                                        <Card.Header className="bg-transparent px-0 fw-bold">How to Apply</Card.Header>
+                                        <Card.Text className="text-muted">
+                                            {item.howToApply}
+                                        </Card.Text>
+                                    </div>
                                 </Card.Body>
                             </Card>
-                        </Col>
-                    </Row>
+
+
+                        </Row>
+                    ))}
                 </Container>
             </section>
 

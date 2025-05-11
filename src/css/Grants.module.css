@@ -212,6 +212,16 @@
     box-shadow: 2px 2px 18px 1px rgb(202, 234, 223);
 }
 
+.grantCardLeft {
+    background-color: rgb(214, 241, 232);
+    color: white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
 
 /* =================== BELOW CAN BE DELETED OR MOVED =================== */
 
