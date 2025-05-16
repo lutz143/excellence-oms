@@ -41,20 +41,20 @@
     margin-bottom: 34px;
 }
   
-  /* Even-numbered rows — custom hover */
-  .cardRow:nth-child(even) :local(.benefitCard):hover {
+/* Even-numbered rows — custom hover */
+.cardRow:nth-child(even) :local(.benefitCard):hover {
     background-color: var(--excellence-light-blue);
     font-weight: 600;
     padding: 1.5rem;
-  }
-  
-  /* Odd-numbered rows — optional different hover */
-  .cardRow:nth-child(odd) :local(.benefitCard):hover {
+}
+
+/* Odd-numbered rows — optional different hover */
+.cardRow:nth-child(odd) :local(.benefitCard):hover {
     background-color: var(--seafoam-transparent);
     font-weight: 600;
     padding: 1.5rem;
-  }
-  
+}
+
   
   
 

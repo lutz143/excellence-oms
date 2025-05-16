@@ -2,6 +2,7 @@ export const grantTypes = [
     {
         title: "Resident Education",
         icon: "lab_research",
+        id: "residentEducation",
         description:
             "Supports oral and maxillofacial surgery residents seeking to attend national or regional educational events, hands-on workshops, or specialized training courses.",
         idealCandidate:
@@ -12,6 +13,7 @@ export const grantTypes = [
     {
         title: "Travel Scholarship",
         icon: "flight_takeoff",
+        id: "travelScholarship",
         description:
             "Provides funding for travel and lodging expenses to attend conferences, symposia, or scientific meetings related to oral and maxillofacial surgery.",
         idealCandidate:
@@ -22,6 +24,7 @@ export const grantTypes = [
     {
         title: "Mentorship & Leadership",
         icon: "tenancy",
+        id: "mentorshipLeadership",
         description:
             "Supports participation in mentorship programs, leadership retreats, or structured shadowing experiences with experienced OMS professionals.",
         idealCandidate:
@@ -32,6 +35,7 @@ export const grantTypes = [
     {
         title: "Community Care",
         icon: "diversity_2",
+        id: "communityCare",
         description:
             "Funds projects or volunteer service initiatives that provide free or low-cost oral and maxillofacial care to underserved populations.",
         idealCandidate:
@@ -42,6 +46,7 @@ export const grantTypes = [
     {
         title: "Research Publication",
         icon: "biotech",
+        id: "researchPublication",
         description:
             "Supports the development, presentation, and publication of original research or clinical case studies in the field of oral and maxillofacial surgery.",
         idealCandidate:

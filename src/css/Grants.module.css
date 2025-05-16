@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 70vh; /* Reduced height */
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -146,6 +146,8 @@
     color: var(--blue-gray);
     padding: 8px;
     margin-top: 24px;
+
+    transition: all 0.4s ease-in-out;
 }
 
 /* =================== GRANT TYPE BANNER =================== */
@@ -193,7 +195,7 @@
 /* =================== GRANT CARDS =================== */
 
 .cardSection {
-  background-color: #f9fafb; /* subtle background */
+  background-color: #f9fafb;
   padding: 2rem 0;
 }
 
@@ -208,9 +210,6 @@
     font-size: 1.2rem;
 }
 
-.grantCard:hover {
-    box-shadow: 2px 2px 18px 1px rgb(202, 234, 223);
-}
 
 .grantCardLeft {
     background-color: rgb(214, 241, 232);
@@ -220,6 +219,18 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.3rem;
+}
+
+.alternate {
+    background-color: var(--light-blue-transparent);
+}
+
+.grantCard:hover {
+    box-shadow: 2px 2px 18px 1px rgb(202, 234, 223);
+}
+
+.grantCard:hover .materialSymbolsOutlined {
+    font-size: 84px;
 }
 
 

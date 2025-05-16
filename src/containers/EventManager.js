@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button, Form, ListGroup } from "react-bootstrap";
 
-import classes from "./EventManager.module.css";
+import classes from "../css/EventManager.module.css";
 
 const LOCAL_STORAGE_KEY = "companyEvents";
 

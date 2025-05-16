@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ActivityLocations.module.css";
+import classes from "../css/ActivityLocations.module.css";
 
 export default function EventManager() {
 
