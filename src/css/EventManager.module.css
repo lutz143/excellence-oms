@@ -1,0 +1,29 @@
+.eventHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: var(--numans);
+    color: var(--blue-gray);
+}
+
+.eventHeader h2 {
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.buttonContainer button {
+    padding: 4px 18px;
+}
+
+.eventContainer {
+    width: 70%;
+}

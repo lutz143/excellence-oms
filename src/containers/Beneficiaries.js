@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 
 import { beneficiaries } from "../data/beneficiaries";
-import classes from "./Beneficiaries.module.css";
+import classes from "../css/Beneficiaries.module.css";
 
 function AnimatedCard({ title, description }) {
     const ref = React.useRef(null);
