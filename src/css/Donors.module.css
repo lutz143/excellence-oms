@@ -1,0 +1,73 @@
+.mainContainer {
+  position: relative;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Create a semi-transparent overlay */
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.45);
+  z-index: 1;
+}
+
+.donorBanner {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.donorWrapper {
+    display: flex;
+    height: 250%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    font-family: "Oxygen", "Numans", sans-serif;
+    padding: 48px;
+}
+
+.donorWrapper h2 {
+    color: var(--blue-gray);
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.headline {
+    margin-top: 55px;
+    padding: 18px;
+    display: flex;
+    height: 250%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    font-family: "Oxygen", "Numans", sans-serif;
+    background-color: var(--light-seafoam);
+    border-top: solid 1px var(--blue-gray);
+    border-bottom: solid 1px var(--blue-gray);
+}
+
+.headline p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--blue-gray);
+    font-weight: 500;
+}
+
+.titleSpan {
+    color: var(--excellence-blue);
+    font-weight: 600;
+}
+
+.title {
+    color: var(--excellence-blue);
+    font-family: "Great Vibes", cursive;
+    font-style: italic;
+    font-size: 2.4rem;
+    padding-right: 4px;
+}

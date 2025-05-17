@@ -92,7 +92,7 @@
 /* =================== BEGINNING STYLE OF ICON BANNER =================== */
 
 .iconBanner {
-    background-color: rgb(214, 241, 232);
+    background-color: var(--light-seafoam);
 }
 
 .iconWrapper {
@@ -212,7 +212,7 @@
 
 
 .grantCardLeft {
-    background-color: rgb(214, 241, 232);
+    background-color: var(--light-seafoam);
     color: white;
     width: 100px;
     display: flex;
