@@ -101,7 +101,7 @@
 
 .cardHeaderCustom {
     font-size: 1.0rem;
-    background-color: white;
+    background-color: transparent;
 }
 
 .cardFooterCustom {
@@ -109,7 +109,7 @@
 }
 
 .donorInfoCard li {
-    list-style: inside square;
+    list-style-type: none;
     text-align: left;
     font-size: 1.0rem;
     margin-bottom: 12px;
@@ -117,6 +117,7 @@
 }
 
 .donorInfoCard {
+    background-color: var(--light-seafoam);
     max-width: 400px;
     min-height: 550px;
     text-align: center;
@@ -127,4 +128,50 @@
     font-weight: 600;
     letter-spacing: 0.2rem;
     padding: 24px;
+    transition: all 0.25s ease-in;
+}
+
+.donorInfoCard:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* START OF HOW TO APPLY SECTION */
+.donnorApply {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.textBanner {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.textBanner h2 {
+    font-size: 3.2rem;
+    color: var(--excellence-blue);
+    font-family: "Numans", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textBanner p {
+    text-align: center;
+    color: var(--blue-gray);
+    font-family: 'Source Code Pro`', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.donationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

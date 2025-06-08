@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+// import { NavLink } from "react-router-dom";
+import { Card, Container, Row, Col } from "react-bootstrap";
+import DonationForm from "../containers/DonationForm";
 
 import classes from "../css/Donors.module.css"
 import bgImage from "../assets/AdobeStock_170237839.jpeg"
@@ -69,6 +70,23 @@ const Donors = () => {
                     </section>
                 </section>
             </main>
+            <section>
+                <Container>
+                    <div>
+                        <Row>
+                            <div className={classes.donnorApply}>
+                                <div className={classes.textBanner}>
+                                    <h2>How to Donate</h2>
+                                    <p>Donating is as simple as filling out the below form or contacting us here.</p>
+                                </div>
+                            </div>
+                        </Row>
+                    </div>
+                    <div className={classes.donationForm}>
+                        <DonationForm />
+                    </div>
+                </Container>
+            </section>
         </>
     );
 };
