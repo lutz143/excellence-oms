@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/excellence-oms/static/css/main.518b4377.css",
-    "main.js": "/excellence-oms/static/js/main.b5d9cc78.js",
+    "main.css": "/excellence-oms/static/css/main.363a1eff.css",
+    "main.js": "/excellence-oms/static/js/main.2549c9a7.js",
     "static/js/453.636ed89a.chunk.js": "/excellence-oms/static/js/453.636ed89a.chunk.js",
     "static/media/AdobeStock_313812944.jpeg": "/excellence-oms/static/media/AdobeStock_313812944.eeff45e0d5b92bb36685.jpeg",
     "static/media/AdobeStock_246948123.jpeg": "/excellence-oms/static/media/AdobeStock_246948123.3b3e3f3778809bb50ed4.jpeg",
     "static/media/AdobeStock_229352026.jpeg": "/excellence-oms/static/media/AdobeStock_229352026.18922edf58084da863e9.jpeg",
     "static/media/AdobeStock_73382244.jpeg": "/excellence-oms/static/media/AdobeStock_73382244.3906553ca7cf4c9360fa.jpeg",
+    "static/media/AdobeStock_170237839.jpeg": "/excellence-oms/static/media/AdobeStock_170237839.dc078782290fee6763c7.jpeg",
     "static/media/DoctorsConsulting.jpg": "/excellence-oms/static/media/DoctorsConsulting.bda1e3522476ded7cebf.jpg",
     "static/media/ExcellenceOMS_Transparent2.png": "/excellence-oms/static/media/ExcellenceOMS_Transparent2.72cc1574583e9e7c86ac.png",
     "static/media/dots.png": "/excellence-oms/static/media/dots.c2f8c3178003b220569c.png",
@@ -17,12 +18,12 @@
     "static/media/icon-youtube.png": "/excellence-oms/static/media/icon-youtube.c6f1cd65bf659919e1ff.png",
     "static/media/icon-facebook.png": "/excellence-oms/static/media/icon-facebook.ea8c7a405a93f50c68ff.png",
     "index.html": "/excellence-oms/index.html",
-    "main.518b4377.css.map": "/excellence-oms/static/css/main.518b4377.css.map",
-    "main.b5d9cc78.js.map": "/excellence-oms/static/js/main.b5d9cc78.js.map",
+    "main.363a1eff.css.map": "/excellence-oms/static/css/main.363a1eff.css.map",
+    "main.2549c9a7.js.map": "/excellence-oms/static/js/main.2549c9a7.js.map",
     "453.636ed89a.chunk.js.map": "/excellence-oms/static/js/453.636ed89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.518b4377.css",
-    "static/js/main.b5d9cc78.js"
+    "static/css/main.363a1eff.css",
+    "static/js/main.2549c9a7.js"
   ]
 }
