@@ -1,0 +1,17 @@
+.formContainer {
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.formLabel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+}
