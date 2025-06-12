@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
-import { Card, Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/ExcellenceOMS_Transparent2.png";
 
 import classes from "../css/Nav.module.css";
@@ -15,7 +14,8 @@ function Navbar() {
 
     return (
         <header>
-            <nav id={classes.navContainer}>
+            {/* Desktop Top Nav */}
+            <div className={classes.navContainer}>
                 <div className={classes.topnavbarContainer}>
                     <div className={classes.topnavbar}>
                         <NavLink to="/news">News</NavLink>
@@ -23,16 +23,8 @@ function Navbar() {
                         <NavLink to="/contact">Contact</NavLink>
                     </div>
                 </div>
-            </nav>
+            </div>
 
-            <nav className={classes.menuBars}>
-                {/* display hamburger menu when media query triggered */}
-                <div className={classes.navbar}>
-                    <NavLink to="#" className={classes.menuBars}>
-                        <FaIcons.FaBars onClick={showSidebar} />
-                    </NavLink>
-                </div>
-            </nav>
             <nav id={classes.navContainer}>
                 <div className={classes.navBackground}>
                     <div
@@ -91,7 +83,49 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-        </header >
+
+            {/* Mobile Navbar Header */}
+            <div className={classes.mobileHeader}>
+                <FaIcons.FaBars className={classes.menuIcon} onClick={showSidebar} />
+                <NavLink to="/" className={classes.siteTitle}>Excellence in OMS</NavLink>
+            </div>
+
+            {/* Sidebar Menu */}
+            <div className={`${classes.sidebarMenu} ${sidebar ? classes.active : ""}`}>
+                <ul onClick={showSidebar}>
+                    <li><NavLink to="/">Home</NavLink></li>
+
+                    <li
+                        className={classes.dropdown}
+                        onMouseEnter={() => setAboutDropdown(true)}
+                        onMouseLeave={() => setTimeout(() => setAboutDropdown(false), 300)}
+                    >
+                        <NavLink to="/about">About</NavLink>
+                        <ul className={`${classes.dropdownMenu} ${aboutDropdown ? classes.show : ""}`}>
+                            <li><NavLink to="/about">About Us</NavLink></li>
+                            <li><NavLink to="/about/mission-statement">Mission Statement</NavLink></li>
+                            <li><NavLink to="/about/board">Board Members</NavLink></li>
+                            <li><NavLink to="/about/involvement">Involvement</NavLink></li>
+                        </ul>
+                    </li>
+
+                    <li
+                        className={classes.dropdown}
+                        onMouseEnter={() => setGrantsDropdown(true)}
+                        onMouseLeave={() => setTimeout(() => setGrantsDropdown(false), 300)}
+                    >
+                        <NavLink to="/grants">Grants</NavLink>
+                        <ul className={`${classes.dropdownMenu} ${grantsDropdown ? classes.show : ""}`}>
+                            <li><NavLink to="/grants">Grants</NavLink></li>
+                            <li><NavLink to="/grants/application-process">How to Apply</NavLink></li>
+                            <li><NavLink to="/grants/donors">Donors</NavLink></li>
+                        </ul>
+                    </li>
+
+                    <li><NavLink to="/login">Profile</NavLink></li>
+                </ul>
+            </div>
+        </header>
     );
 }
 
