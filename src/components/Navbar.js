@@ -87,7 +87,7 @@ function Navbar() {
             {/* Mobile Navbar Header */}
             <div className={classes.mobileHeader}>
                 <FaIcons.FaBars className={classes.menuIcon} onClick={showSidebar} />
-                <NavLink to="/" className={classes.siteTitle}>Excellence in OMS</NavLink>
+                <NavLink to="/" className={classes.siteTitle}><span className={classes.siteTitleSpan}>Excellence</span> in OMS</NavLink>
             </div>
 
             {/* Sidebar Menu */}
