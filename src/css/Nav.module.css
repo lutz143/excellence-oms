@@ -192,7 +192,7 @@
   .menuIcon {
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--excellence-white);
+    color: var(--excellence-blue);
   }
 
   .siteTitle {
@@ -213,27 +213,32 @@
   .sidebarMenu {
     display: none;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: var(--light-gray);
     padding: 1rem;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 55px;
     left: 0;
-    width: 100%;
     z-index: 1000;
   }
 
   .sidebarMenu.active {
+    width: 50%;
     display: flex;
+    flex-direction: column;
   }
 
   .sidebarMenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-bottom: 24px;
   }
 
   .sidebarMenu li {
-    margin: 0.5rem 0;
+    font-family: "Oxygen", "Numans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0.9rem 0;
   }
 
   .sidebarMenu li a {
@@ -242,13 +247,13 @@
     color: #333;
   }
 
-  .dropdownMenu {
+  /* .dropdownMenu {
     display: none;
     padding-left: 1rem;
-    background: #eee; /* Optional for contrast */ /* UPDATED */
+    background: #eee;
   }
 
   .dropdownMenu.show {
     display: block;
-  }
+  } */
 }
