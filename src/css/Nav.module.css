@@ -2,86 +2,87 @@
 
 /* ================= TEST CODE =================  */
 
+/* Default: Desktop View */
+
+.mobileHeader {
+  display: none;
+}
+
+.sidebarMenu {
+  display: none;
+}
+
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .topnavbarContainer {
-    display: flex;
-    height: 24px;
-    padding-right: 10px;
-    background-color: var(--light-blue);
+  display: flex;
+  height: 24px;
+  padding-right: 10px;
+  background-color: var(--light-blue);
 }
 
 .topnavbar {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 8px;
-    width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 8px;
+  width: 100%;
 }
 
-.topnavbar a{
-    margin-right: 20px;
-    font-size: 1.1rem;
-    color: var(--excellence-white);
-    text-decoration: none;
+.topnavbar a {
+  margin-right: 20px;
+  font-size: 1.1rem;
+  color: var(--excellence-white);
+  text-decoration: none;
 }
 
-.topnavbar a:hover{
-    text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+.topnavbar a:hover {
+  text-shadow: 1px 1px 8px #fff, 1px 1px 8px #ccc;
 }
 
-#navContainer {
-    display: block;
-    z-index: 100;
-    padding: 0;
+.navContainer {
+  display: block;
+  z-index: 100;
+  padding: 0;
 }
 
 .imgContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 155px;
 }
 
 .imgContainer img {
-    position: relative;
-    top: 5px;
-    width: 100%;
-    height: auto;
+  position: relative;
+  top: 5px;
+  width: 100%;
+  height: auto;
 }
-
-
-/* ================= TEST CODE =================  */
-
 
 .navBackground {
   display: block;
   background-color: var(--excellence-black5);
-  /* background-color: var(--blue-gray); */
   border-bottom: solid 3px var(--excellence-blue);
   width: 100%;
   height: auto;
 }
 
-/* Style for the main navbar */
 .navbar {
-    display: inline-flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
 }
 
-
-
 .navbar li {
-    list-style: none;
-    position: relative;
-    /* padding: 0 20px; */
+  list-style: none;
+  position: relative;
 }
 
 .navbar li a {
@@ -117,115 +118,132 @@
 .menuBars {
   display: none;
 }
-  
-/* Style for dropdown container */
+
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
-  
-/* Initially hide the dropdown menu */
+
 .dropdownMenu {
-    display: none;
-    position: absolute;
-    left: 20%;
-    top: 180%;
-    background: white;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 2px 8px 8px 2px;
-    list-style: none;
-    z-index: 300;
-    min-width: 200px;
-    overflow: hidden;
+  display: none;
+  position: absolute;
+  left: 20%;
+  top: 180%;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 2px 8px 8px 2px;
+  list-style: none;
+  z-index: 300;
+  min-width: 200px;
+  overflow: hidden;
 }
-  
-/* Show the dropdown menu when hovering over "About" */
+
 .dropdown:hover .dropdownMenu,
 .dropdownMenu.show {
   display: block;
 }
-  
-/* Style for submenu items */
+
 .dropdownMenu li {
-    padding: 8px 12px;
+  padding: 8px 12px;
 }
-  
+
 .dropdownMenu li a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: black;
-    display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  display: block;
 }
-  
+
 .dropdownMenu li a:hover,
 .dropdownMenu li a.active {
-    background: #f0f0f0;
-    color: var(--excellence-blue);
+  background: #f0f0f0;
+  color: var(--excellence-blue);
 }
-  
 
+/* ================== Mobile View ================== */
 
-@media screen and (max-width: 872px) {
-
-  #navContainer {
-    position: fixed;
-    z-index: 100;
-    padding: 0;
-  }
-  
-  .navbar .navbar{
+@media (max-width: 990px) {
+  .topnavbarContainer {
     display: none;
   }
 
-  .menuBars {
-    display: block;
-    margin: 12px 12px 12px;
-    font-size: 2rem;
-    background: none;
+  .navbar {
+    display: none; /* Hide desktop navbar on mobile */ /* UPDATED */
+  }
+
+  .navBackground {
+    display: none;
+  }
+
+  .mobileHeader {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--excellence-black5);
+    border-bottom: 1px solid #ddd;
+    border-top: solid 2px var(--excellence-blue);
+    justify-content: space-between;
+    z-index: 999;
+  }
+
+  .menuIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
     color: var(--excellence-blue);
   }
 
-  .menuBars {
-    margin: 0 12px 12px 12px;
-    font-size: 2rem;
-    background: none;
-    color: var(--excellence-blue);
+  .siteTitle {
+    font-family: "Oxygen", "Numans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    color: var(--excellence-white);
   }
 
-  .mobile.active {
+  .siteTitleSpan {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.6rem;
+    color: var(--excellence-blue)
+  }
+
+  .sidebarMenu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    padding: 1rem;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .sidebarMenu.active {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 88px;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: var(--light-gray);
-    padding: 40px 0 0 10px;
-    z-index: 150;
-    transition: 0.3s ease-in-out;
   }
 
-  .mobile li {
-    margin-bottom: 18px;
+  .sidebarMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 24px;
   }
 
-  .mobile li a {
+  .sidebarMenu li {
+    font-family: "Oxygen", "Numans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0.9rem 0;
+  }
+
+  .sidebarMenu li a {
+    font-size: 1.3rem;
     text-decoration: none;
-    color: var(--black);
+    color: #333;
   }
-
-  .mobile li a:hover,
-  .mobile li a.active {
-    color: var(--black);
-  }
-
-  .mobile li a::after
-  .mobile li a.active::after {
-    color: var(--black);
-  }
-
 }

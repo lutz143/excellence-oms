@@ -16,7 +16,7 @@ function Grants() {
                 </div>
                 <Container className={classes.textBannerContainer}>
                     <Row className={classes.rowContainer}>
-                        <Col>
+                        <Col s={12}>
                             <div className={classes.textBanner}>
                                 <h2>Grants</h2>
                                 <p>Explore grant opportunities and learn how to partner with Excellence in OMS.</p>
@@ -29,7 +29,7 @@ function Grants() {
             <section className={classes.iconBanner}>
                 <Container className={classes.iconWrapper}>
                     <Row className={classes.iconRow}>
-                        <Col xs={12} md={3} className={classes.iconCol}>
+                        <Col xs={6} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -44,7 +44,7 @@ function Grants() {
                             </Row>
                         </Col>
 
-                        <Col xs={12} md={3} className={classes.iconCol}>
+                        <Col xs={6} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -59,7 +59,7 @@ function Grants() {
                             </Row>
                         </Col>
 
-                        <Col xs={12} md={3} className={classes.iconCol}>
+                        <Col xs={6} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -74,7 +74,7 @@ function Grants() {
                             </Row>
                         </Col>
 
-                        <Col xs={12} md={3} className={classes.iconCol}>
+                        <Col xs={6} md={3} className={classes.iconCol}>
                             <Row>
                                 <div className={classes.iconContainer}>
                                     <span className={classes.materialSymbolsOutlined}>
@@ -94,53 +94,50 @@ function Grants() {
             <section className={classes.grantTypeBanner}>
                 <Container className={classes.grantTypeWrapper}>
                     <h2>Grant Types</h2>
-                    <Row className={classes.grantGrid}>
+                    <Row className={classes.grantRow}>
                         <Col className={classes.iconCol}>
-                            <Row>
-                                <div className={classes.iconText}>
-                                    <a href="#residentEducation" target="_self" >
-                                        <h4>Resident Education</h4>
-                                    </a>
-                                </div>
-                            </Row>
+
+                            <div className={classes.iconText}>
+                                <a href="#residentEducation" target="_self" >
+                                    <h4>Resident Education</h4>
+                                </a>
+                            </div>
+
                         </Col>
                         <Col className={classes.iconCol}>
-                            <Row>
-                                <div className={classes.iconText}>
-                                    <a href="#travelScholarship" target="_self">
-                                        <h4>Travel Scholarship</h4>
-                                    </a>
-                                </div>
-                            </Row>
+
+                            <div className={classes.iconText}>
+                                <a href="#travelScholarship" target="_self">
+                                    <h4>Travel Scholarship</h4>
+                                </a>
+                            </div>
+
                         </Col>
                         <Col className={classes.iconCol}>
-                            <Row>
-                                <div className={classes.iconText}>
-                                    <a href="#mentorshipLeadership" target="_self">
-                                        <h4>Mentorship & Leadership</h4>
-                                    </a>
-                                </div>
-                            </Row>
+
+                            <div className={classes.iconText}>
+                                <a href="#researchPublication" target="_self">
+                                    <h4>Research & Publication</h4>
+                                </a>
+                            </div>
                         </Col>
                         <Col className={classes.iconCol}>
-                            <Row>
-                                <div className={classes.iconText}>
-                                    <a href="#communityCare" target="_self">
-                                        <h4>Community Care</h4>
-                                    </a>
-                                </div>
-                            </Row>
+                            <div className={classes.iconText}>
+                                <a href="#mentorshipLeadership" target="_self">
+                                    <h4>Mentorship & Leadership</h4>
+                                </a>
+                            </div>
                         </Col>
                         <Col className={classes.iconCol}>
-                            <Row>
-                                <div className={classes.iconText}>
-                                    <a href="#researchPublication" target="_self">
-                                        <h4>Research & Publication</h4>
-                                    </a>
-                                </div>
-                            </Row>
+
+                            <div className={classes.iconText}>
+                                <a href="#communityCare" target="_self">
+                                    <h4>Community Care</h4>
+                                </a>
+                            </div>
                         </Col>
                     </Row>
+
                 </Container>
             </section>
             <section className={classes.cardSection}>

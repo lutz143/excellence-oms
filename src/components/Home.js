@@ -57,17 +57,21 @@ function Home() {
 
             <section className={classes.aboutUsSection}>
                 <Container className={classes.aboutUsWrapper}>
-                    <Col>
-                        <div className={classes.aboutUsImageWrapper}>
-                            <img src={DoctorsConsultingPic} alt="Doctors Consulting" className={classes.aboutUsImage} />
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={classes.aboutUsTextBanner}>
-                            <h2>Our Story</h2>
-                            <p>Founded by a practicing oral and maxillofacial surgeon, our nonprofit organization was created to support the next generation of surgeons during one of the most demanding phases of their careers: residency. By awarding grants to those who show promise, passion, and financial need, we hope to advance excellence in the field while removing barriers to success. We believe in a future where every resident has the tools and resources to reach their full potential</p>
-                        </div>
-                    </Col>
+                    <Row>
+
+
+                        <Col s={12} className={classes.aboutUsImageCol}>
+                            <div className={classes.aboutUsImageWrapper}>
+                                <img src={DoctorsConsultingPic} alt="Doctors Consulting" className={classes.aboutUsImage} />
+                            </div>
+                        </Col>
+                        <Col s={12}>
+                            <div className={classes.aboutUsTextBanner}>
+                                <h2>Our Story</h2>
+                                <p>Founded by a practicing oral and maxillofacial surgeon, our nonprofit organization was created to support the next generation of surgeons during one of the most demanding phases of their careers: residency. By awarding grants to those who show promise, passion, and financial need, we hope to advance excellence in the field while removing barriers to success. We believe in a future where every resident has the tools and resources to reach their full potential</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </section>
         </>

@@ -1,16 +1,12 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import { grants } from "../data/grants";
-
+// import css classes
 import classes from "../css/About.module.css";
-
+// import pictures
 import OralSurgeryPic from "../assets/AdobeStock_229352026.jpeg";
 import MidwestLogo from "../assets/midwest-oms.png"
 import DentalLifelineLogo from "../assets/dental-life-network.png"
 import OsteoScienceLogo from "../assets/osteo-science-foundation-logo.jpg"
-
+// import data models
 import ActivityLocation from '../containers/ActivityLocations';
 
 function About() {

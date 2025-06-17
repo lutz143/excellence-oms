@@ -18,7 +18,6 @@
     width: 100%;
     height: 150%;
     object-fit: cover;
-    /* transform: translate(0, 40px); */
 }
 
 .bannerImageWrapper::before {
@@ -171,11 +170,11 @@
     padding-bottom: 14px;
 }
 
-.grantGrid {
+/* .grantGrid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
+} */
 
 .iconCol h4 {
     font-family: "Oxygen", "Numans", sans-serif;
@@ -277,8 +276,14 @@
 
 /* =================== MEDIA STYLING =================== */
 
-@media (min-width: 768px) {
-  .grantGrid {
-    grid-template-columns: repeat(5, 1fr); /* 5 columns on md+ */
-  }
+@media (max-width: 990px) {
+    .textBanner {
+        margin-top: 150px;
+        margin-left: 0;
+    }
+
+    .grantRow {
+        flex-direction: column;
+    }
+
 }
