@@ -25,12 +25,12 @@ function BoardMember() {
             </div>
             <Container className={classes.boardMemberConatiner}>
                 <Row className={classes.boardMemberRow}>
-                    <Col className="col-3">
+                    <Col lg={3} xs={12}>
                         <div className={classes.boardMemberImgContainer}>
                             <img src={`${member.image}`} alt="Board Member"></img>
                         </div>
                     </Col>
-                    <Col className="col-9">
+                    <Col lg={3} xs={12}>
                         <div className={classes.boardBio}>
                             <p>{member.bio}</p>
                         </div>
