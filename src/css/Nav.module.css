@@ -169,7 +169,7 @@
   }
 
   .navbar {
-    display: none; /* Hide desktop navbar on mobile */ /* UPDATED */
+    display: none; /* Hide desktop navbar on mobile */ 
   }
 
   .navBackground {

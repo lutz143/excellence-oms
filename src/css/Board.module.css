@@ -51,7 +51,7 @@
 #boardCard {
     padding: 1.2rem 2.5rem;
     align-items: center;
-    /* border-radius: 0px; */
+    border-radius: 0px;
     margin: 12px;
     border: none;
     background-color: var(--light-gray);
@@ -95,4 +95,12 @@
 
 a {
     text-decoration: none;
+}
+
+
+@media (max-width: 990px) {
+    .board {
+        padding-top: 54px;
+    }
+
 }
