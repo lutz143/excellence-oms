@@ -15,14 +15,14 @@ function Footer(props) {
         <footer>
             <Container>
                 <Row>
-                    <Col xs lg="5">
+                    <Col s={12} lg={5} className={classes.logoColumn}>
                         <div className={classes.imgContainer}>
                             <NavLink to="/">
                                 <img src={logo} alt="Logo" />
                             </NavLink>
                         </div>
                     </Col>
-                    <Col xs lg="3">
+                    <Col s={12} lg="3">
                         <div className={classes.footerOrgHeader}>
                             Organization
                         </div>
@@ -41,7 +41,7 @@ function Footer(props) {
                             </ul>
                         </div>
                     </Col>
-                    <Col xs lg="2">
+                    <Col s={12} lg="2">
                         <div className={classes.footerOrgHeader}>
                             Support
                         </div>
@@ -53,8 +53,8 @@ function Footer(props) {
                             </ul>
                         </div>
                     </Col>
-                    <Col xs lg="2" className={classes.connectColumn}>
-                        <div className={classes.footerConnectHeader}>
+                    <Col s={6} lg={2}>
+                        <div className={classes.footerOrgHeader} style={{ marginBottom: "8px" }}>
                             Connect
                         </div>
                         <div>

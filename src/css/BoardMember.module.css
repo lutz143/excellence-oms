@@ -40,3 +40,25 @@
     height: auto;
     border-radius: 8px;
 }
+
+@media (max-width: 990px) {
+    .boardMember {
+        padding-top: 62px;
+    }
+
+    .boardMemberRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .boardMemberImgContainer img {
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        justify-content: center;
+    }
+
+}
