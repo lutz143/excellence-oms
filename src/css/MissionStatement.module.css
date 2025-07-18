@@ -138,3 +138,13 @@
     }
   }
   
+  @media (max-width: 990px) {
+    .missionStatementPage {
+        padding-top: 24px;
+    }
+
+    .missionCard {
+        margin-bottom: 12px;
+    }
+
+}
