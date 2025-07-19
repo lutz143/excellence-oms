@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/excellence-oms/static/css/main.7a7df852.css",
+    "main.css": "/excellence-oms/static/css/main.62a8dd64.css",
     "main.js": "/excellence-oms/static/js/main.30381502.js",
     "static/js/453.636ed89a.chunk.js": "/excellence-oms/static/js/453.636ed89a.chunk.js",
     "static/media/AdobeStock_313812944.jpeg": "/excellence-oms/static/media/AdobeStock_313812944.eeff45e0d5b92bb36685.jpeg",
@@ -18,12 +18,12 @@
     "static/media/icon-youtube.png": "/excellence-oms/static/media/icon-youtube.c6f1cd65bf659919e1ff.png",
     "static/media/icon-facebook.png": "/excellence-oms/static/media/icon-facebook.ea8c7a405a93f50c68ff.png",
     "index.html": "/excellence-oms/index.html",
-    "main.7a7df852.css.map": "/excellence-oms/static/css/main.7a7df852.css.map",
+    "main.62a8dd64.css.map": "/excellence-oms/static/css/main.62a8dd64.css.map",
     "main.30381502.js.map": "/excellence-oms/static/js/main.30381502.js.map",
     "453.636ed89a.chunk.js.map": "/excellence-oms/static/js/453.636ed89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a7df852.css",
+    "static/css/main.62a8dd64.css",
     "static/js/main.30381502.js"
   ]
 }
